@@ -1,0 +1,27 @@
+{
+  "name": "Sam Li - Full Stack Developer",
+  "short_name": "Sam Li",
+  "description": "Full Stack Developer Portfolio - React, Vue.js, Node.js Expert",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#2563eb",
+  "orientation": "portrait-primary",
+  "icons": [
+    {
+      "src": "/android-chrome-192x192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "/android-chrome-512x512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ],
+  "categories": ["development", "portfolio", "technology"],
+  "lang": "en-US",
+  "dir": "ltr"
+}

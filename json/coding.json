@@ -1,0 +1,1673 @@
+[
+  {
+    "nm": "proof of concept"
+  },
+  {
+    "nm": "Web Tools",
+    "items": [
+      {
+        "nm": "Sentry",
+        "url": "https://sentry.io/",
+        "what":"Application monitoring software considered 'not bad' by 4 million developers."
+      },
+      {
+        "nm":"ngrok",
+        "url":"https://ngrok.com/",
+        "what":"内网穿透小工具，有了它轻松让别人访问你的项目"
+      },
+      {
+        "nm":"A Frame",
+        "url":"https://aframe.io/"
+      },
+      {
+        "nm": "java全栈体系",
+        "url": "https://pdai.tech/"
+      },
+      {
+        "nm": "冰冻大西瓜博客",
+        "url": "https://bddxg.top/"
+      },
+      {
+        "nm": "Javascript framework syntax compare",
+        "url": "https://component-party.lainbo.com/"
+      },
+      {
+        "nm": "Visulize codebase",
+        "url": "https://vision.useadrenaline.com/"
+      },
+      {
+        "nm": "Weppalyzer",
+        "what": "Broswer plugin"
+      },
+      {
+        "nm": "Clerk auth",
+        "url": "https://clerk.com/"
+      },
+      {
+        "nm": "Web Monitor",
+        "url": "https://www.datadoghq.com/"
+      },
+      {
+        "nm": "autofit.js",
+        "what": "handle large screen"
+      },
+      {
+        "nm": "Patterns dev",
+        "url": "https://www.patterns.dev/"
+      },
+      {
+        "nm": "9 Senior Developer Mental Models Every Programmer Should Master",
+        "url": "https://dev.to/dragosnedelcu/9-senior-developer-mental-models-every-programmer-should-master-1jlk"
+      },
+      {
+        "nm": "Dev Road Map",
+        "url": "https://roadmap.sh/"
+      },
+      {
+        "nm": "Free for Dev",
+        "url": "https://free-for.dev/#/"
+      },
+      {
+        "nm": "Carbon share code image",
+        "url": "https://carbon.now.sh"
+      },
+      {
+        "nm": "Regulex",
+        "url": "https://jex.im/regulex/"
+      },
+      {
+        "nm": "Ionic",
+        "url": "https://ionic.io"
+      },
+      {
+        "nm": "Colorhunt",
+        "url": "https://colorhunt.co"
+      },
+      {
+        "nm": "Removebg",
+        "url": "https://www.remove.bg"
+      },
+      {
+        "nm": "Manypixels",
+        "url": "https://www.manypixels.co"
+      },
+      {
+        "nm": "Visual algorithm",
+        "url": "https://visualgo.net/en"
+      },
+      {
+        "nm": "API Fox",
+        "url": "https://apifox.com/"
+      },
+      {
+        "nm": "Draw canvas",
+        "url": "https://c.runoob.com/more/svgeditor/"
+      }
+    ]
+  },
+  {
+    "nm": "Backend",
+    "items": [
+      {
+        "nm": "API Gateway"
+      },
+      {
+        "nm": "REST API"
+      },
+      {
+        "nm": "JWT"
+      },
+      {
+        "nm": "Docker"
+      },
+      {
+        "nm": "MQTT"
+      },
+      {
+        "nm": "Terraform"
+      },
+      {
+        "nm": "Service Mesh",
+        "what": "manages communication between microservices"
+      }
+    ]
+  },
+  {
+    "nm": "Microservice patterns",
+    "items": [
+      {
+        "nm": "Aggregator Pattern"
+      },
+      {
+        "nm": "Proxy Pattern"
+      },
+      {
+        "nm": "Chain Pattern"
+      },
+      {
+        "nm": "Parallel Pattern"
+      },
+      {
+        "nm": "Branch Pattern"
+      },
+      {
+        "nm": "Asynchronous Message Pattern"
+      }
+    ]
+  },
+  {
+    "nm": "web api",
+    "items": [
+      {
+        "nm": "face api",
+        "url": "https://www.bilibili.com/video/BV1Km4y1t7Gb/"
+      },
+      {
+        "nm": "rickandmorty api",
+        "url": "https://rickandmortyapi.com/"
+      },
+      {
+        "nm": "The RESTful Pokémon API",
+        "url": "https://pokeapi.co/"
+      }
+    ]
+  },
+  {
+    "nm": "VS Code",
+    "items": [
+      {
+        "nm": "plugins",
+        "items": [
+          {
+            "nm": "Version Lens",
+            "what": "check package version if latest"
+          },
+          {
+            "nm": "console ninjia"
+          },
+          {
+            "nm": "code runner"
+          },
+          {
+            "nm": "tabnine"
+          },
+          {
+            "nm": "live server"
+          },
+          {
+            "nm": "Excel Viewer"
+          },
+          {
+            "nm": "CodeTour"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "nm": "html",
+    "items": [
+      {
+        "nm": "inputmode",
+        "what": "input tab attribute control for mobile device",
+        "items": [
+          {
+            "nm": "tel"
+          },
+          {
+            "nm": "email"
+          },
+          {
+            "nm": "numeric"
+          }
+        ]
+      },
+      {
+        "nm": "poster",
+        "what": "video tag cover"
+      },
+      {
+        "nm": "multiple",
+        "what": "multiple attribute for input file and select tag"
+      },
+      {
+        "nm": "accesskey",
+        "what": "shortcut keyboard key to focus on input tag"
+      },
+      {
+        "nm": "tabindex",
+        "what": "order for input tag"
+      },
+      {
+        "nm": "download",
+        "what": "anchor tag download attribute, can specify file name"
+      },
+      {
+        "nm":"contenteditable='true'",
+        "what":"make html element editable"
+      }
+    ]
+  },
+  {
+    "nm": "css",
+    "items": [
+      {
+        "nm": "selectors",
+        "items": [
+          {
+            "nm": "field-sizing: content",
+            "what": "show input width, height base on content size"
+          },
+          {
+            "nm": "scale/translate/rotate without transform"
+          },
+          {
+            "nm": "scroll-snap"
+          },
+          {
+            "nm": "mix-blend-mode"
+          },
+          {
+            "nm": "text-stroke: 2px black;"
+          },
+          {
+            "nm": ":first-letter",
+            "what": "use to style first letter of a element"
+          },
+          {
+            "nm": ":selection",
+            "what": "use to style selection content of a element"
+          },
+          {
+            "nm": "box-decoration-break",
+            "what": "if text got cut into lines with bg and border radius, use box-decoration-break:clone to keep style on cut position"
+          },
+          {
+            "nm": "@media(hover)",
+            "what": "style when hover"
+          },
+          {
+            "nm": "accent-color"
+          },
+          {
+            "nm": "caret-color"
+          },
+          {
+            "nm": "border-image"
+          },
+          {
+            "nm": "scroll-behavior: smooth;scroll-padding:10rem"
+          },
+          {
+            "nm": ":focus-visible",
+            "what": "always take effect on tab action, click action only works on input"
+          },
+          {
+            "nm": ":focus-within",
+            "what": "use on parent element, take effect on parent and children elements"
+          },
+          {
+            "nm": ":is"
+          },
+          {
+            "nm": ":has"
+          },
+          {
+            "nm": ":where"
+          },
+          {
+            "nm": ":placeholder-shown",
+            "what": "detect if input is empty and placeholder text is shown",
+            "how": "input:placeholder-shown + .clear {display: none}; hide the clear element if placeholder shown"
+          }
+        ]
+      },
+      {
+        "nm": "optimize css",
+        "items": [
+          {
+            "nm": "避免高消耗属性",
+            "why": "上述属性都是对性能要求比较高的。如果这些属性使用较少，那这就不是问题。但是如果一个页面出现几百次，那么整体的CSS可能会受到影响，所以要谨慎使用",
+            "how": "avoid using box-shadow,border-radius,position:fixed,transform,:nth-child,filter"
+          },
+          {
+            "nm": "使用 <link> 代替 @import",
+            "why": "@import 规则主要用于导入资源或者CSS文件。它会阻止其他文件并行下载，并可能会导致网站速度变慢。",
+            "how": "可以使用多个HTML 中的<link>标签来代替@import，它将并行加载CSS文件，可以在一定程度上提高应用的加载的速度"
+          },
+          {
+            "nm": "简化选择器",
+            "why": "降低选择器的复杂性就可以减少浏览器的负载并保持代码简洁明了"
+          },
+          {
+            "nm": "避免使用 !Important",
+            "why": "如果CSS的规则中 !Important 太多，浏览器就必须对代码进行额外的检查，这可能会降低页面的加载速度"
+          },
+          {
+            "nm": "CSS实现特效和SVG代替图片",
+            "why": "使用 CSS 代码实现就会比图片加载速度更快, SVG可以给图片添加效果,图像自动适应用户屏幕"
+          },
+          {
+            "nm": "压缩 CSS",
+            "why": "我们可以通过压缩CSS文件来删除文件中所有的空白和不必要的代码来减少文件的大小。CSS文件变小了，加载的时间自然就变少了，页面的加载速度就会变"
+          },
+          {
+            "nm": "使用0而不是0px",
+            "why": "当处理一个巨大的CSS文件时，没有单位会比有单位时文件小一点。"
+          },
+          {
+            "nm": "使用十六进制而不是颜色名称",
+            "why": "浏览器就会花费更多时间来找出颜色的十六进制值。不同的浏览器显示效果可能是不一样的"
+          }
+        ]
+      },
+      {
+        "nm": "position",
+        "items": [
+          {
+            "nm": "fixed element height not working",
+            "why": "when ancestor elements transform, perspective, filter not none, element will position relative to ancestor instead of viewport",
+            "what": "ios backdrop-filter not really work"
+          }
+        ]
+      },
+      {
+        "nm": "margin",
+        "items": [
+          {
+            "nm": "margin collaps",
+            "what": "child element margin top will render parent element margin top as well"
+          },
+          {
+            "nm": "margin merge"
+          }
+        ]
+      },
+      {
+        "nm": "keep elements same width even thought different content width, but not full width",
+        "how": "use display: inline-flex; flex-direction:column"
+      },
+      {
+        "nm": "Button element always vertical center child element"
+      },
+      {
+        "nm": "lightningcss"
+      },
+      {
+        "nm": "BFC"
+      },
+      {
+        "nm": "nesting css",
+        "how": "use &"
+      },
+      {
+        "nm": "writing-mode:vertical-lr/horizontal-lr"
+      },
+      {
+        "nm": "gap in flexbox"
+      },
+      {
+        "nm": "resize: auto/vertical"
+      },
+      {
+        "nm": "Text Gradients",
+        "how": "background:linear-gradient();-webkit-background-clip:text;-webkit-text-fill-color:transparent;"
+      },
+      {
+        "nm": "object-fit",
+        "pros": "for image cover/contain",
+        "how": "cover"
+      },
+      {
+        "nm": "translate does not trigger reflow or repaint"
+      },
+      {
+        "nm": "optimize for print",
+        "how": "print media create stylesheet for print"
+      },
+      {
+        "nm": "float",
+        "what": "position an image to the right or left including text wrapping around it"
+      },
+      {
+        "nm": "media",
+        "what": "print, speech, screen"
+      },
+      {
+        "nm": "focus-within",
+        "what": "update parent element style if focus input",
+        "how": "parent:focus-within {/*css style*/}"
+      },
+      {
+        "nm": "aspect-ratio",
+        "what": "set relative width/height"
+      }
+    ]
+  },
+  {
+    "nm": "git",
+    "items": [
+      {
+        "nm": "git push sam HEAD:branch_name",
+        "desc": "push remote branch"
+      },
+      {
+        "nm": "git reset --soft HEAD~1",
+        "desc": "reset last commit local"
+      }
+    ]
+  },
+  {
+    "nm": "CI/CD"
+  },
+  {
+    "nm": "skills",
+    "items": [
+      {
+        "nm": "Cyclomatic complexity 圈复杂度",
+        "what": "a measurement developed by Thomas McCabe to determine the stability and level of confidence in a program"
+      },
+      {
+        "nm": "function signature",
+        "what": "define a function name, parameter, return "
+      },
+      {
+        "nm": "防抖: debounce, prevent the event trigger from being fired too often"
+      },
+      {
+        "nm": "节流: throttle, delaying function execution, infinite scrolling, Ajax-based instant search"
+      },
+      {
+        "nm": "函数柯里化,currying"
+      },
+      {
+        "nm": "pure function"
+      },
+      {
+        "nm": "diff算法"
+      },
+      {
+        "nm": "two way data binding, webpack split chunks"
+      },
+      {
+        "nm": "cross framework component跨框架组件"
+      },
+      {
+        "nm": "GraphQL",
+        "pros": "Data Typing, real-time, introspection"
+      },
+      {
+        "nm": "Linear Optimization"
+      },
+      {
+        "nm": "Cross-origin resources sharing, CORS 跨域资源共享",
+        "pros": "浏览器保护机制",
+        "how": [
+          "后端: Access-Control-Allow-Origin, cors middleware, add allow domains",
+          "前端: vite create-react-app, vite.config.js server.proxy",
+          "nginx 中转服务器代理 http proxy middleware"
+        ]
+      },
+      {
+        "nm": "web components"
+      },
+      {
+        "nm": "微前端micro front end",
+        "pros": "",
+        "how": "model frederation"
+      }
+    ]
+  },
+  {
+    "nm": "optimization",
+    "items": [
+      {
+        "nm": "cdn"
+      },
+      {
+        "nm": "web worker"
+      },
+      {
+        "nm": "Memorization"
+      },
+      {
+        "nm": "replace json with others",
+        "url": "https://medium.com/data-science-community-srm/json-is-incredibly-slow-heres-what-s-faster-ca35d5aaf9e8"
+      }
+    ]
+  },
+  {
+    "nm":"Web Browser API",
+    "items":[
+      {"nm":"EyeDropper", "what":"global color fetch api, can fetch color outside webpage"}
+    ]
+  },
+  {
+    "nm": "JavaScript",
+    "items": [
+      {"nm":"Prevent device sleep","how":"navigator.wakeLock.request('screen')"},
+      {
+        "nm": "Numeric Separators",
+        "what": "1000000 -> 1_000_000",
+        "why": "It makes our code more informative and readable."
+      },
+      {
+        "nm": "beforeunload",
+        "what": "window.addEventListner('beforeunload',function(){/*page refresh or close*/})"
+      },
+      {
+        "nm": "View Transition API"
+      },
+      {
+        "nm": "padStart/padEnd",
+        "what": "add 0 to the left of a string"
+      },
+      {
+        "nm": "using"
+      },
+      {
+        "nm": "groupBy",
+        "what": "return key value object of array of object",
+        "how": "Array.groupBy((item)=>return item.field)"
+      },
+      {
+        "nm": "JS label",
+        "what": "break out two for loop",
+        "how": "outer: for ..... for.... break outer"
+      },
+      {
+        "nm": "event delegation",
+        "what": "add event listener to parent node"
+      },
+      {
+        "nm": "Inheritance"
+      },
+      {
+        "nm": "prototype"
+      },
+      {
+        "nm": "Primitive Types",
+        "what": "String|Number|Boolean|Null|Undefined|Symbol|BitInt store directly in stack"
+      },
+      {
+        "nm": "Reference Types",
+        "what": "Arrays|Functions|Objects Stored in heap accessed by reference"
+      },
+      {
+        "nm":"weak set",
+        "what":"an object in WeakSet can be garbage collected if there is no other reference to it"
+      },
+      {
+        "nm": "Execution Context",
+        "what": "Global/Function memmory creation phase, execution phase"
+      },
+      {
+        "nm": "Hoisting",
+        "what": "var:undefined function, assignment dont get hoisting"
+      },
+      {
+        "nm": "let const is block scope"
+      },
+      {
+        "nm": "variable shawdoning",
+        "what": "let const, not var"
+      },
+      {
+        "nm": "check parentheses function"
+      },
+      {
+        "nm": "arrow function",
+        "how": "should not use in class/object function, this point to global context"
+      },
+      {
+        "nm": "deconstruction"
+      },
+      {
+        "nm": "call"
+      },
+      {
+        "nm": "apply"
+      },
+      {
+        "nm": "ES class"
+      },
+      {
+        "nm": "spread operator",
+        "why": "if object has property of object, new object will share a reference"
+      },
+      {
+        "nm": "shallow copying",
+        "what": "outer object created new, but inner object still reference from the target"
+      },
+      {
+        "nm": "high order function: accept functions as parameters or return a function as their output"
+      },
+      {
+        "nm": "event loops"
+      },
+      {
+        "nm": "microtask queue",
+        "what": "promiseJobs has high prioirty: fetch, browser observer"
+      },
+      {
+        "nm": "task/callback queues",
+        "what": "add cb function to queue first in first out"
+      },
+      {
+        "nm": "call stack",
+        "what": "add execution function to stack"
+      },
+      {
+        "nm": "event bubbling",
+        "why": "child to parent",
+        "how": "use stoppropagation"
+      },
+      {
+        "nm": "event capturing",
+        "why": "parent to child"
+      },
+      {
+        "nm": "asynchronous callbacks"
+      },
+      {
+        "nm": "Promises",
+        "what": "get a promise to the future value",
+        "how": "promise.all([]), .allSettled: return all status, .any: return first fullfill, ignore all fails, promise chaining",
+        "pros": [
+          "Improves Code Readability.",
+          "Better handling of asynchronous operations.",
+          "Better flow of control definition in asynchronous logic.",
+          "Better Error Handling"
+        ]
+      },
+      {
+        "nm": "same origin policy"
+      },
+      {
+        "nm": "strict keyword"
+      },
+      {
+        "nm": "throw error"
+      },
+      {
+        "nm": "generator",
+        "why": "create infinity loop",
+        "how": "funnction* name() yield param, generatorObject.next(param) .return() .throw() (value:'',done:false)"
+      },
+      {
+        "nm": "continue break"
+      },
+      {
+        "nm": "Object.freeze",
+        "what": "make object not able to be modified"
+      },
+      {
+        "nm": "map for object",
+        "pros": "key can be object or other type"
+      },
+      {
+        "nm": "set for array",
+        "pros": "no duplicate items"
+      },
+      {
+        "nm": "float point number"
+      },
+      {
+        "nm": "console",
+        "how": "console.log .time .error .info .assert .table .dir .count"
+      },
+      {
+        "nm": "garbage collection",
+        "what": " In contrast, JavaScript automatically allocates memory when objects are created and frees it when they are not used anymore"
+      },
+      {
+        "nm": "debugger"
+      },
+      {
+        "nm": "closure",
+        "what": "when you have a function defined inside of another function, that inner function has access to the variables and scope of the outer function even if the outer function finishes executing and those variables are no longer accessible outside of that function",
+        "how": "function that returns function"
+      },
+      {
+        "nm": "First Class Function",
+        "what": "functions can be passed as variables, can be returned, can be assigned to variable"
+      },
+      {
+        "nm": "IIFE",
+        "what": "define and call function"
+      },
+      {
+        "nm": "fetch",
+        "how": "new AbortController(); fetch(url,{signal:controller.signal}); return () => {controller.abort}"
+      },
+      {
+        "nm": "js engine",
+        "how": "source code -> parser -> abstract syntax tree -> interpreter -> JIT compilation"
+      },
+      {
+        "nm": "array methods",
+        "what": "filter map find forEach reduce"
+      },
+      {
+        "nm": "implicit explicit binding",
+        "what": "implicit call function with obj, explicity: call function bind/call/apply other params"
+      },
+      {
+        "nm": "caching/memoize function",
+        "how": "create high order function has object to save value, fn.call(this,...args)"
+      },
+      {
+        "nm": "infinite curring",
+        "how": "if infinit args, use recursion, if infinit function args, reduce"
+      },
+      {
+        "nm": "infinite chaing",
+        "what": "calc.add(10),multiply(5),subtract(30).add(10) result.total",
+        "how": "use object function, return this in function"
+      },
+      {
+        "nm": "jsonp"
+      }
+    ]
+  },
+  {
+    "nm": "Flutter",
+    "items": [
+      {
+        "nm": "flutLab",
+        "url": "https://flutlab.io/"
+      },
+      {
+        "nm": "widgets",
+        "items": [
+          {
+            "nm": "Hero"
+          },
+          {
+            "nm": "Container"
+          },
+          {
+            "nm": "AlertDialog/CupertinoAlertDialog"
+          },
+          {
+            "nm": "ToggleButtons"
+          },
+          {
+            "nm": "CallbackShortCuts"
+          },
+          {
+            "nm": "Expanded"
+          },
+          {
+            "nm": "Wrap"
+          },
+          {
+            "nm": "SafeArea"
+          },
+          {
+            "nm": "AnimatedContainer"
+          },
+          {
+            "nm": "AnimatedBuilder"
+          },
+          {
+            "nm": "FadeTransition"
+          },
+          {
+            "nm": "FutureBuilder"
+          },
+          {
+            "nm": "FloatingActionButton"
+          },
+          {
+            "nm": "PageView"
+          },
+          {
+            "nm": "SliverList & SliverGrid"
+          },
+          {
+            "nm": "FadeInImage"
+          },
+          {
+            "nm": "PageView"
+          },
+          {
+            "nm": "Table"
+          },
+          {
+            "nm": "StreamBuilder"
+          },
+          {
+            "nm": "SliverAppBar"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "nm": "react native",
+    "items": [
+      {
+        "nm": "expo",
+        "items": [
+          {"nm":"Route groups","what":"group route together","how":"use (group) folder name"},
+          {"nm":"Layout File", "what": "global/scope layout", "how":"_layout.tsx put <Slot/> as page content"},
+          {"nm":"Catch all Segments", "why": "route has more parameters", "how":"file name [...rest].tsx"},
+          {"nm":"Not found route", "what": "global/scope not found page", "how":"+not-found.tsx"},
+          {"nm":"Platform code", "what":"use code on different platform", "how":"file name with .ios/.web/.android.tsx or use Platform.os in code"}
+        ]
+      }
+    ]
+  },
+  {
+    "nm": "react",
+    "items": [
+      {
+        "nm": "dangerouslySetInnerHTML",
+        "how": "use DOMPurify.sanitize to prevent js"
+      },
+      {
+        "nm": "React Fiber"
+      },
+      {
+        "nm": "library",
+        "items": [
+          {
+            "nm": " React Hook Form"
+          },
+          {
+            "nm": "Framer Motion."
+          },
+          {
+            "nm": "react query"
+          },
+          {
+            "nm": "Zustand"
+          },
+          {
+            "nm": "@preact/signals",
+            "what": "Signals are a way of expressing state that ensure apps stay fast regardless of how complex they get. Signals are based on reactive principles and provide excellent developer ergonomics, with a unique implementation optimized for Virtual DOM",
+            "why": "global state will make all the child components re-rendder"
+          }
+        ]
+      },
+      {
+        "nm": "issue prop drilling",
+        "how": "composition component"
+      },
+      {
+        "nm": "server component"
+      },
+      {
+        "nm": "A component is changing an uncontrolled input of type text to be controlled error in ReactJS",
+        "what": "during render input value is undefined, value={undefined}",
+        "why": "because '' is a valid string value. so when you change '' to 'xyz', input type is not changing means controlled to controlled. But in case of undefined to xyz type will change from uncontrolled to controlled",
+        "how": "set default value to input value"
+      },
+      {
+        "nm": "Declarative声明式设计"
+      },
+      {
+        "nm": "virtual dom",
+        "pros": "DOM不需要重排"
+      },
+      {
+        "nm": "state",
+        "what": ""
+      },
+      {
+        "nm": "jsx: syntax extension to JavaScript",
+        "pros": "babel compiler",
+        "how": "convert jsx to react.createElement"
+      },
+      {
+        "nm": "single data flow"
+      },
+      {
+        "nm": "hooks",
+        "from": "algebraic effects代数效应",
+        "what": "Hooks are functions that let you “hook into” React state and lifecycle features from function components. Hooks don't work inside classes — they let you use React without classes"
+      },
+      {
+        "nm": "useReducer",
+        "pros": "handle set multiple states, complex state"
+      },
+      {
+        "nm": "useMemo",
+        "pros": "rerender only if useMemo dependency changes, for object, array too"
+      },
+      {
+        "nm": "useCallback",
+        "how": "if pass function to child and use in useEffect, should useCallBack"
+      },
+      {
+        "nm": "useEffect",
+        "what": "works after render",
+        "cons": "referencial equality for object",
+        "how": "useMemo for object array"
+      },
+      {
+        "nm": "useLayoutEffect",
+        "what": "not syncho, work before useEffect"
+      },
+      {
+        "nm": "useTransition",
+        "what": "two set state, but large calculate, priority",
+        "how": "[isPending,startTransition] = useTransition()",
+        "pros": "performance",
+        "cons": "increase render times"
+      },
+      {
+        "nm": "useDeferredValue",
+        "what": "like debounce, use for low priority, if value not changed, do stuff"
+      },
+      {
+        "nm": "pureComponent",
+        "pros": "produce the same output given same input"
+      },
+      {
+        "nm": "error boundary",
+        "how": "safe component"
+      },
+      {
+        "nm": "Improve performance",
+        "how": [
+          "Keeping component state local where necessary",
+          "Memoizing React components to prevent unnecessary re-renders, use React.memo, React.memo is a higher-order component used to wrap a purely functional component to prevent re-rendering if the props received in that component never changes",
+          "To prevent the function from always redefining, we will use a useCallback Hook that returns a memoized version of the callback between renders, With the useCallback Hook, the incrementCount function only redefines when the count dependency array changes, const incrementCount = React.useCallback(() => setCount(count + 1), [count]);",
+          "Code-splitting in React using dynamic import(), React.lazy, <React.Suspense fallback={<p>Loading page...</p>}>",
+          "Windowing or list virtualization in React applications",
+          "Lazy loading images in React",
+          "React.PureComponent props shallow comparison, will not render if props are same",
+          "regular component shouldComponentUpdate",
+          "React Fragments  reduce html tags",
+          "Using Immutable Data Structures: Zero side-effects,Immutable data objects are simpler to create, test, and use,Helps prevent temporal coupling,Easier to track changes",
+          "Production Mode Flag in Webpack",
+          "Avoid Inline Function Definition in the Render Function",
+          "Throttling and Debouncing Event Action in JavaScript",
+          "Avoid using Index as Key for map",
+          "CSS Animations Instead of JS Animations",
+          "Using a CDN",
+          "Using Web Workers for CPU Extensive Tasks",
+          "Analyzing and Optimizing Your Webpack Bundle Bloat",
+          "Consider Server-side Rendering",
+          "Enable Gzip Compression on Web Server"
+        ]
+      },
+      {
+        "nm": "multipe set state",
+        "how": "ReactDOM.unstable_batchedUpdates()"
+      },
+      {
+        "nm": "context",
+        "how": "createContext, useContext"
+      }
+    ]
+  },
+  {
+    "nm": "vue",
+    "items": [
+      {
+        "nm": "plugins",
+        "items": [
+          {
+            "nm": "vue-tree-color",
+            "what": "use to render tree structure organization"
+          },
+          {
+            "nm": "vite-plugin-vue-devtools"
+          }
+        ]
+      },
+      {
+        "nm": "tree shaking",
+        "what": " dead-code elimination"
+      },
+      {
+        "nm": "state management",
+        "items": [
+          {
+            "nm": "Pinia"
+          },
+          {
+            "nm": "Vuex"
+          }
+        ]
+      },
+      {
+        "nm": "Test: Cypress"
+      },
+      {
+        "nm": "Provide / Inject",
+        "what": "solve props drilling with provide and inject"
+      },
+      {
+        "nm": "Teleport",
+        "what": "<Teleport> is a built-in component that allows us to teleport a part of a component's template into a DOM node that exists outside the DOM hierarchy of that component.",
+        "why": "Sometimes we may run into the following scenario: a part of a component's template belongs to it logically, but from a visual standpoint, it should be displayed somewhere else in the DOM, outside of the Vue application."
+      },
+      {
+        "nm": "$nexttick",
+        "desc": "wait for the next DOM update cycle, then do callback"
+      },
+      {
+        "nm": "keep-alive"
+      },
+      {
+        "nm": "setup",
+        "why": "automatically have expose, dont expose all attribute, keep one way data flow"
+      }
+    ]
+  },
+  {
+    "nm": "TypeScript",
+    "pros": "more robust, easily spot bugs, predictability, readability",
+    "cons": "more code to write,more to learn,required compilation,not true static typing",
+    "items": [
+      {
+        "nm": "Never",
+        "what": "indicate value never exists",
+        "how": "for missing value error checking"
+      }
+    ]
+  },
+  {
+    "nm": "JS Framework",
+    "items": [
+      {
+        "nm": "Svelte"
+      },
+      {
+        "nm": "Solid"
+      },
+      {
+        "nm":"飞冰ICE",
+        "url":"https://v3.ice.work/"
+      },
+      {
+        "nm": "NextJs",
+        "items": [
+          {"nm":"image return 400", "how":"update middleware config matcher"},
+          {"nm":"client component","what":"browser react component","how":"put 'use client' on top of the component"},
+          {"nm":"update query url","how":"useEffect router.push with state change"},
+          {
+            "nm": "useEffect call twice",
+            "how": "set reactStrictMode to false"
+          },
+          {
+            "nm": "<Script src />",
+            "how": "add onLoad={() => {console.log('Script has loaded')}}"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "nm":"AI code editor",
+    "items":[
+      {
+        "nm":  "Lumi.new"
+      },
+      {
+        "nm":"Bolt.new"
+      },
+      {
+        "nm":"Tempo.new"
+      },
+      {
+        "nm":"Readdy"
+      },
+      {
+        "nm":"Lovable.dev"
+      },
+      {
+        "nm":"trae.ai"
+      },
+      {
+        "nm":"Cursor"
+      },
+      {
+        "nm":"Windsurf Editor"
+      },
+      {
+        "nm":"marscode"
+      }
+    ]
+  },
+  {
+    "nm":"CMS",
+    "items":[
+      {
+        "nm":"wordpress",
+        "items":[
+          {
+            "nm":"Plugins",
+            "items":[
+              {
+                "nm":"Accelerator",
+                "what":"Optimazation"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nm":"Shopify",
+        "items":[]
+      }
+    ]
+  },
+  {
+    "nm":"Backend as a service",
+    "items":[
+      {
+        "nm":"Supabase",
+        "items":[
+          {"nm":"DB policy", "what":"policy for read, write"},
+          {"nm":"db join", "how":"need to connect foreigner key between tables"},
+          {"nm":"auth users", "what":"can't use to join with other table"}
+        ]
+      },
+      {
+        "nm":"Convex"
+      },
+      {
+        "nm":"Appwrite"
+      },
+      {
+        "nm":"Firebase"
+      },
+      {
+        "nm": "Backendless"
+      }
+    ]
+  },
+  {
+    "nm": "cloud server",
+    "items": [
+      {
+        "nm": "Coolify"
+      },
+      {
+        "nm": "aws",
+        "items": [
+          {
+            "nm": "EC2(Elastic computing)"
+          },
+          {
+            "nm": "API Gateway",
+            "what": "Amazon API Gateway is a fully managed service that makes it easy for developers to create, publish, maintain, monitor, and secure APIs at any scale."
+          },
+          {
+            "nm": "amplify",
+            "what": "Front end application host"
+          },
+          {
+            "nm": "CloudFront",
+            "what": "a content delivery network (CDN) service built for high performance, security, and developer convenience."
+          }
+        ]
+      },
+      {
+        "nm": "google cloud"
+      },
+      {
+        "nm": "azure"
+      },
+      {
+        "nm": "aliyun"
+      },
+      {
+        "nm": "tencentyun"
+      },
+      {
+        "nm": "vercel"
+      },
+      {
+        "nm": "netlify",
+        "items":[
+          {"nm":"DNS config", "what":"if use netlify dns, need to update servename, will affect domain email, need to config DNS on netlify"}
+        ]
+      },
+      {
+        "nm": "onrender"
+      },
+      {
+        "nm": "supabase"
+      },
+      {
+        "nm": "Clickhouse"
+      }
+    ]
+  },
+  {
+    "nm": "data structure",
+    "items": [
+      {
+        "nm": "Array"
+      },
+      {
+        "nm": "String"
+      },
+      {
+        "nm": "stack"
+      },
+      {
+        "nm": "hash table"
+      },
+      {
+        "nm": "Graph"
+      }
+    ]
+  },
+  {
+    "nm": "design pattern",
+    "items": [
+      {
+        "nm":"BFF Backend for Frontend",
+        "what":"for multiple clients"
+      },
+      {"nm":"Event Driven Architecture"},
+      {"nm":"Strangler pattern", "what":"cutting monolith to microservices"},
+      {
+        "nm": "factory design pattern",
+        "what": "A factory is a method or function that creates an object, or a set of objects, without exposing the creation logic to the client."
+      },
+      {
+        "nm": "Facade Pattern",
+        "pros": "封装第三方api",
+        "what": "A facade is a class that provides a simplified API for larger body of code. It is often to used to hide low-level details of a subsystem."
+      },
+      {
+        "nm": "Builder Pattern",
+        "how": "in js class each method return this with chaining way",
+        "pros": "simplify constructor reduce params, set other attribute in builder function or pass attributes as object in option param"
+      },
+      {
+        "nm": "Null Object Pattern"
+      }
+    ]
+  },
+  {
+    "nm": "SEO",
+    "items": [
+      {
+        "nm": "youtube tutorial",
+        "url": "https://www.youtube.com/watch?v=-B58GgsehKQ&t=517s"
+      },
+      {
+        "nm": "Make Good Content"
+      },
+      {
+        "nm": "clean HTML constructure"
+      },
+      {
+        "nm": "server side render, ISR"
+      }
+    ]
+  },
+  {
+    "nm": "SOLID Design Principles",
+    "items": [
+      {
+        "nm": "Single Responsibility"
+      },
+      {
+        "nm": "Open/Closed Principle",
+        "pros": "define better data structures, "
+      },
+      {
+        "nm": "Liskov Substitution Principle",
+        "pros": "Write better Object Oriented Code"
+      },
+      {
+        "nm": "Interface Segregation Principle接口隔离"
+      },
+      {
+        "nm": "Dependency Inversion Principle依赖倒置原则",
+        "desc": "",
+        "pros": ""
+      }
+    ]
+  },
+  {
+    "nm": "alogorithm",
+    "items": [
+      {
+        "nm": "动态规划Dynamic Programming"
+      },
+      {
+        "nm": "排序"
+      },
+      {
+        "nm": "贪心greed"
+      },
+      {
+        "nm": "双指针"
+      }
+    ]
+  },
+  {
+    "nm": "Python",
+    "items": [
+      {
+        "nm":"@dataclass"
+      },
+      {
+        "nm":"match case",
+        "how":"can use to match different type of datatype"
+      },
+      {
+        "nm": "python-docx",
+        "what": "parse docx file"
+      },
+      {
+        "nm": "web server",
+        "items": [
+          {
+            "nm": "Uvicorn"
+          }
+        ]
+      },
+      {
+        "nm": "web framework",
+        "items": [
+          {
+            "nm": "Robyn"
+          },
+          {
+            "nm": "fastAPI"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "nm": "Golang",
+    "items": [
+      {
+        "nm": "Gin webframwork"
+      },
+      {
+        "nm": "Db connect error might be password special character"
+      }
+    ]
+  },
+  {
+    "nm": "Java",
+    "items": [
+      {
+        "nm": "volatile"
+      },
+      {
+        "nm": "Primitive Types",
+        "items": [
+          {
+            "nm": "byte",
+            "what": "8 bits"
+          },
+          {
+            "nm": "short",
+            "what": "16 bits"
+          },
+          {
+            "nm": "int",
+            "what": "32 bits"
+          },
+          {
+            "nm": "long",
+            "what": "64 bits"
+          },
+          {
+            "nm": "float",
+            "what": "32 bits"
+          },
+          {
+            "nm": "double",
+            "what": "64 bits"
+          },
+          {
+            "nm": "char",
+            "what": "16 bits"
+          },
+          {
+            "nm": "boolean",
+            "what": "1 bits"
+          }
+        ]
+      },
+      {
+        "nm": "overloading",
+        "what": "allow class have different constructors with different params"
+      },
+      {
+        "nm": "Exceptions",
+        "what": "Checked/Unchecked Exception"
+      },
+      {
+        "nm": "fail fast vs fail safe"
+      },
+      {
+        "nm": "Marker interface"
+      },
+      {
+        "nm": "thread"
+      },
+      {
+        "nm": "runnable",
+        "what": "A Runnable is basically a type of class (Runnable is an Interface) that can be put into a thread, describing what the thread is supposed to do.",
+        "how": "Thread t = new Thread(new Runnable() {public void run() {// stuff here}});t.start();"
+      }
+    ]
+  },
+  {
+    "nm":"Web Server",
+    "items":[
+      {
+        "nm":"nginx",
+        "items":[
+          {
+            "nm":"reverse proxy"
+          },
+          {
+            "nm":"load balance"
+          },
+          {
+            "nm":"cache"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "nm": "database",
+    "items": [
+      {
+        "nm": "Types of NoSQL Database",
+        "items": [
+          {
+            "nm": "Key-Value database",
+            "what": "Every item in the database is stored as an attribute name (or key) together with its value. #Example: DynamoDB (Amazon S3) and Redis (In Memory Database), etc."
+          },
+          {
+            "nm": "Document based database",
+            "what": "It stores data in form of documents (BSON format) and it can contains many different key-value pairs, or key-array pairs, or even nested documents.#Example: MongoDB"
+          },
+          {
+            "nm": "Column based database",
+            "what": "t stores data together as columns instead of rows and are optimized for queries over large datasets. #Example: Cassandra, HBase, etc"
+          },
+          {
+            "nm": "Graph based database",
+            "what": "It is used to store information about networks, such as social connections. #Example: Neo4J and HyperGraphDB, etc"
+          }
+        ]
+      },
+      {
+        "nm": "normalization",
+        "what": "Normalization is a database design technique that reduces data redundancy and eliminates undesirable characteristics like Insertion, Update and Deletion Anomalies. Normalization rules divides larger tables into smaller tables and links them using relationships. The purpose of Normalisation in SQL is to eliminate redundant (repetitive) data and ensure data is stored logically."
+      },
+      {
+        "nm": "mongoose",
+        "items": [
+          {
+            "nm": "loadClass",
+            "what": "use to create a Mongoose schema from an ES6 class",
+            "how": "schema.loadClass(MyClass)"
+          }
+        ]
+      },
+      {
+        "nm": "MySQL",
+        "items": [
+          {
+            "nm": "sargable query(search argment able)",
+            "what": "direct comparsion instead of warpping column in function in where clause "
+          },
+          {
+            "nm": "DDL",
+            "what": "Data definition language (DDL) commands are the commands which are used to define the database. CREATE, ALTER, DROP and TRUNCATE are some common DDL commands."
+          },
+          {
+            "nm": "DML",
+            "what": "Data manipulation language (DML) commands are commands which are used for manipulation or modification of data. INSERT, UPDATE and DELETE are some common DML commands."
+          },
+          {
+            "nm": "Both TIMESTAMP and DATETIME are used to store data and time. Explain difference between them and when should one be used",
+            "what": "Both TIMESTAMP and DATETIME store date time in YYYY-MM-DD HH:MM:SS format. While DATETIME stores provided date time, TIMESTAMP first converts provided time to UTC while storing and then again converts it back to server time zone upon retrieval. So if you need to serve different users in different countries using same time data, TIMESTAMP facilitates it. DATETIME simply stores provided date time without making any time zone related conversion."
+          },
+          {
+            "nm": "pagination optimization",
+            "items": [
+              {
+                "nm": "use index",
+                "how": "explain select * from user where id > 1000001 limit 100"
+              },
+              {
+                "nm": "multiple step sql",
+                "how": "select id first, then use sub query to select others"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "nm": "Testing",
+    "items": [
+      {
+        "nm": "Artillery"
+      },
+      {
+        "nm": "k6"
+      },
+      {
+        "nm": "unit test",
+        "what": "test a single unit of code"
+      },
+      {
+        "nm": "Smoke Testing 烟雾测试",
+        "what": "also called build verification testing or confidence testing, is a software testing method that is used to determine if a new software build is ready for the next testing phase. This testing method determines if the most crucial functions of a program work but does not delve into finer details."
+      },
+      {
+        "nm": "Regression Testing 回归测试",
+        "what": "Regression testing is defined as a type of software testing technique that re-runs functional and non-functional tests to ensure that a software application works as intended after any code changes, updates, revisions, improvements, or optimizations."
+      }
+    ]
+  },
+  {
+    "nm": "web scrap"
+  },
+  {
+    "nm": "payment",
+    "items": [
+      {
+        "nm": "square"
+      },
+      {
+        "nm": "Plaid"
+      },
+      {
+        "nm":"zpay"
+      },
+      {
+        "nm": "stripe",
+        "items": [
+          {
+            "nm": "custom payment flow",
+            "what": "will create payment record in stripe when payment form render",
+            "how": [
+              "create own api with stripe library to get payment intent client secret",
+              "use clientSecret render payment form",
+              "each payment render will have a payment id, should reuse the id if payment is not paid"
+            ]
+          },
+          {
+            "nm": "session checkout"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "nm": "interview",
+    "items": [
+      {
+        "nm": "technical interview",
+        "items": [
+          {
+            "nm": "handle situation"
+          },
+          {
+            "nm": "analytical thinking"
+          }
+        ]
+      },
+      {
+        "nm": "Tell me about yourself",
+        "items": [
+          "I'm an experienced web developer who constantly seeks out innovative solutions to everyday problems",
+          "I got my analytical thinking and collaboration skills, and I love working with a team.",
+          "I will learn and practice update-to-date coding skills on side projects, provide dev suggestioin or solution to freinds and family if they need my helpe for their business",
+          "love to challenge myself on work and life,"
+        ]
+      },
+      {
+        "nm": "Where do you see yourself in the future",
+        "items": [
+          "I want to contribute as much as I can to the business while working as a level 3 software engineer. However, once I have mastered all aspects of this role I see myself moving into a management role such as a tech lead or staff software engineer. I’m a leader and incredibly organized as I have demonstrated in previous roles. ",
+          "In the future, I see myself as a successful software engineer who has benefited the business and achieved my technical goals. I enjoy new challenges and am eager to move up in the company into a specialized role where I can focus on the more technical problems we face and make a real difference."
+        ]
+      },
+      {
+        "nm": "What is your biggest weakness and how do you overcome it",
+        "items": [
+          "read some knowledges, if not use it, forget it, so mark it down"
+        ]
+      },
+      {
+        "nm": "Describe a project you are proud of and what you technically contributed on it",
+        "items": [
+          "Map features, debounce, Facade, encapsulation fetch api, lazy image load"
+        ]
+      },
+      {
+        "nm": "question to ask",
+        "items": [
+          "What are the expectations that you have set for this role?",
+          "Can you describe the team that I would work with in this position?",
+          "What technology does your software engineer team use?",
+          "What do you think are the biggest challenges facing the software engineering team?",
+          "What are the growth opportunities like in this position?",
+          "What development methodology do you use at your company?",
+          "What is the culture of your company and software engineering department like?",
+          "What does a day in this position usually look like?",
+          "What learning opportunities could I have in this position?",
+          "What are your company's plans for the near future?",
+          "Why do you enjoy working at this company?"
+        ]
+      }
+    ]
+  }
+]
