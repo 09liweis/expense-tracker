@@ -6,20 +6,31 @@ interface ExpenseChartProps {
   categoryTransactions: CategoryTransaction[];
 }
 
-const COLORS = [
-  'blue', 'emerald', 'amber', 'rose', 'teal',
-  'cyan', 'orange', 'lime', 'sky', 'pink',
-];
+const COLOR_MAP: Record<string, { bg: string; bgHover: string; bgLight: string; bgLighter: string; border: string; text: string; textDark: string; dot: string }> = {
+  blue:     { bg: 'bg-blue-500',     bgHover: 'bg-blue-600',     bgLight: 'bg-blue-100',     bgLighter: 'from-blue-50',     border: 'border-blue-200',     text: 'text-blue-500',     textDark: 'text-blue-900',     dot: 'bg-blue-500' },
+  emerald:  { bg: 'bg-emerald-500',  bgHover: 'bg-emerald-600',  bgLight: 'bg-emerald-100',  bgLighter: 'from-emerald-50',  border: 'border-emerald-200',  text: 'text-emerald-500',  textDark: 'text-emerald-900',  dot: 'bg-emerald-500' },
+  amber:    { bg: 'bg-amber-500',    bgHover: 'bg-amber-600',    bgLight: 'bg-amber-100',    bgLighter: 'from-amber-50',    border: 'border-amber-200',    text: 'text-amber-500',    textDark: 'text-amber-900',    dot: 'bg-amber-500' },
+  rose:     { bg: 'bg-rose-500',     bgHover: 'bg-rose-600',     bgLight: 'bg-rose-100',     bgLighter: 'from-rose-50',     border: 'border-rose-200',     text: 'text-rose-500',     textDark: 'text-rose-900',     dot: 'bg-rose-500' },
+  teal:     { bg: 'bg-teal-500',     bgHover: 'bg-teal-600',     bgLight: 'bg-teal-100',     bgLighter: 'from-teal-50',     border: 'border-teal-200',     text: 'text-teal-500',     textDark: 'text-teal-900',     dot: 'bg-teal-500' },
+  cyan:     { bg: 'bg-cyan-500',     bgHover: 'bg-cyan-600',     bgLight: 'bg-cyan-100',     bgLighter: 'from-cyan-50',     border: 'border-cyan-200',     text: 'text-cyan-500',     textDark: 'text-cyan-900',     dot: 'bg-cyan-500' },
+  orange:   { bg: 'bg-orange-500',   bgHover: 'bg-orange-600',   bgLight: 'bg-orange-100',   bgLighter: 'from-orange-50',   border: 'border-orange-200',   text: 'text-orange-500',   textDark: 'text-orange-900',   dot: 'bg-orange-500' },
+  lime:     { bg: 'bg-lime-500',     bgHover: 'bg-lime-600',     bgLight: 'bg-lime-100',     bgLighter: 'from-lime-50',     border: 'border-lime-200',     text: 'text-lime-500',     textDark: 'text-lime-900',     dot: 'bg-lime-500' },
+  sky:      { bg: 'bg-sky-500',      bgHover: 'bg-sky-600',      bgLight: 'bg-sky-100',      bgLighter: 'from-sky-50',      border: 'border-sky-200',      text: 'text-sky-500',      textDark: 'text-sky-900',      dot: 'bg-sky-500' },
+  pink:     { bg: 'bg-pink-500',     bgHover: 'bg-pink-600',     bgLight: 'bg-pink-100',     bgLighter: 'from-pink-50',     border: 'border-pink-200',     text: 'text-pink-500',     textDark: 'text-pink-900',     dot: 'bg-pink-500' },
+};
+
+const COLOR_KEYS = Object.keys(COLOR_MAP);
 
 function parseAmount(total: string) {
   return parseFloat(total.replace(/[$,]/g, ''));
 }
 
 function StatCard({ color, label, value }: { color: string; label: string; value: string }) {
+  const c = COLOR_MAP[color];
   return (
-    <div className={`bg-gradient-to-br from-${color}-50 to-${color}-100 rounded-lg p-2 md:p-4 border border-${color}-200`}>
-      <p className={`text-xs font-medium text-${color}-900 uppercase tracking-wide mb-1`}>{label}</p>
-      <p className={`text-xl font-bold text-center text-${color}-900`}>{value}</p>
+    <div className={`bg-gradient-to-br ${c.bgLighter} ${c.bgLight} rounded-lg p-2 md:p-4 ${c.border}`}>
+      <p className={`text-xs font-medium ${c.textDark} uppercase tracking-wide mb-1`}>{label}</p>
+      <p className={`text-xl font-bold text-center ${c.textDark}`}>{value}</p>
     </div>
   );
 }
@@ -28,6 +39,7 @@ function CategoryRow({ category, amount, percentage, color, isHovered, onHover, 
   category: string; amount: string; percentage: number; color: string;
   isHovered: boolean; onHover: (v: string | null) => void; index: number;
 }) {
+  const c = COLOR_MAP[color];
   return (
     <motion.div
       initial={{ opacity: 0, x: -20 }}
@@ -41,12 +53,12 @@ function CategoryRow({ category, amount, percentage, color, isHovered, onHover, 
     >
       <div className="flex items-center justify-between mb-2">
         <div className="flex items-center gap-3 flex-1">
-          <div className={`w-4 h-4 rounded-full bg-${color}-500 flex-shrink-0 shadow-sm`} />
+          <div className={`w-4 h-4 rounded-full ${c.dot} flex-shrink-0 shadow-sm`} />
           <span className="font-semibold text-gray-900 capitalize">{category}</span>
         </div>
         <div className="text-right">
           <div className="font-bold text-gray-900">{amount}</div>
-          <div className={`text-sm font-medium text-${color}-500`}>{percentage.toFixed(1)}%</div>
+          <div className={`text-sm font-medium ${c.text}`}>{percentage.toFixed(1)}%</div>
         </div>
       </div>
       <div className="relative h-2 bg-gray-100 rounded-full overflow-hidden">
@@ -54,7 +66,7 @@ function CategoryRow({ category, amount, percentage, color, isHovered, onHover, 
           initial={{ width: 0 }}
           animate={{ width: `${percentage}%` }}
           transition={{ duration: 0.8, delay: index * 0.05 + 0.5 }}
-          className={`absolute top-0 left-0 h-full bg-${color}-500 rounded-full shadow-sm`}
+          className={`absolute top-0 left-0 h-full ${c.bg} rounded-full shadow-sm`}
         />
       </div>
     </motion.div>
@@ -94,7 +106,8 @@ export default function ExpenseChart({ categoryTransactions }: ExpenseChartProps
         <div className="flex items-center h-16 rounded-xl overflow-hidden shadow-sm border border-gray-200">
           {sorted.map((cat, i) => {
             const pct = total > 0 ? (parseAmount(cat.total) / total) * 100 : 0;
-            const color = COLORS[i % COLORS.length];
+            const color = COLOR_KEYS[i % COLOR_KEYS.length];
+            const c = COLOR_MAP[color];
             const isHovered = hoveredCategory === cat.category;
 
             return (
@@ -103,7 +116,7 @@ export default function ExpenseChart({ categoryTransactions }: ExpenseChartProps
                 initial={{ width: 0 }}
                 animate={{ width: `${pct}%` }}
                 transition={{ duration: 0.8, delay: i * 0.05, ease: 'easeOut' }}
-                className={`h-full cursor-pointer relative group bg-${color}-500 hover:bg-${color}-600`}
+                className={`h-full cursor-pointer relative group ${c.bg} ${c.bgHover}`}
                 onMouseEnter={() => setHoveredCategory(cat.category)}
                 onMouseLeave={() => setHoveredCategory(null)}
                 style={{
@@ -140,7 +153,7 @@ export default function ExpenseChart({ categoryTransactions }: ExpenseChartProps
             category={cat.category}
             amount={cat.total}
             percentage={total > 0 ? (parseAmount(cat.total) / total) * 100 : 0}
-            color={COLORS[i % COLORS.length]}
+            color={COLOR_KEYS[i % COLOR_KEYS.length]}
             isHovered={hoveredCategory === cat.category}
             onHover={setHoveredCategory}
             index={i}
