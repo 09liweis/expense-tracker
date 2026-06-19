@@ -87,10 +87,6 @@ body {
   background-color: #ffffffa6;
 }
 
-.month p:hover {
-  color: rgb(180, 77, 26);
-}
-
 .todo-is-done {
   animation: todoDone 0.6s ease-in-out;
 }
