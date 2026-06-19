@@ -103,10 +103,6 @@ body {
   }
 }
 
-.resume-section {
-  @apply p-1.5 text-white bg-black text-lg inline-block;
-}
-
 .knowledge-item {
   @apply font-bold transition duration-300 hover:translate-x-1;
 }
