@@ -107,18 +107,6 @@ body {
   @apply font-bold transition duration-300 hover:translate-x-1;
 }
 
-.category-price {
-  @apply relative bg-linear-to-l from-red-300 border-dashed border-2 border-red-600 p-1 mb-1 rounded-sm transition duration-300;
-}
-
-.category-price.income {
-  @apply text-green-600;
-}
-
-.category-price.expense {
-  @apply text-red-600;
-}
-
 .expense-item {
   @apply flex px-1 justify-between cursor-pointer text-red-400 hover:text-red-600 transition duration-300;
 }
