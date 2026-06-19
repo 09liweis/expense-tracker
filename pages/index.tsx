@@ -229,14 +229,14 @@ const Expense: NextPage = () => {
         {user._id && (
           <div className="flex flex-wrap items-center gap-2">
             <button
-              className="px-4 py-2 bg-green-600 text-white rounded-lg hover:bg-green-700 transition-colors disabled:bg-gray-400 disabled:cursor-not-allowed"
+              className="px-4 py-2 bg-green-600 text-white cursor-pointer rounded-lg hover:bg-green-700 transition-colors disabled:bg-gray-400 disabled:cursor-not-allowed"
               onClick={downloadCSV}
               disabled={downloading}
             >
               {downloading ? "Downloading..." : "Download CSV"}
             </button>
             <button
-              className="px-4 py-2 bg-primary text-white rounded-lg hover:bg-primary-dark transition-colors"
+              className="px-4 py-2 bg-primary text-white rounded-lg hover:bg-primary-dark transition-colors cursor-pointer"
               onClick={() => {
                 setShowForm(true);
                 setSelectTransaction({});
