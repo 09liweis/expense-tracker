@@ -43,7 +43,7 @@ const Expense: NextPage = () => {
   const [selectedTransaction, setSelectTransaction] = useState<Transaction>({});
   const [loading, setLoading] = useState(false);
   const [downloading, setDownloading] = useState(false);
-  const [currentView, setCurrentView] = useState<string>('overview');
+  const [currentView, setCurrentView] = useState<string>("overview");
   const [expenseResponse, setExpenseResponse] = useState<ExpenseResponse>(
     EMPTY_EXPENSE_RESPONSE
   );
@@ -52,12 +52,12 @@ const Expense: NextPage = () => {
     const body = {
       date: params?.date || expenseResponse.date,
       endDate: params?.endDate || expenseResponse.endDate,
-      categories: params?.categories || selectedCategories
-    }
+      categories: params?.categories || selectedCategories,
+    };
     setLoading(true);
     const expenseResp = await fetchAPI({
       url: EXPENSE_LIST_API,
-      body
+      body,
     });
     setLoading(false);
     if (expenseResp.status == 200) {
@@ -224,36 +224,32 @@ const Expense: NextPage = () => {
         />
       )}
 
-      <div className="flex flex-col md:flex-row justify-between items-start md:items-center gap-4 mb-3">
+      <div className="flex flex-row justify-between items-center gap-3 mb-3">
         <h1 className="text-2xl font-bold">Expense Tracker</h1>
-        <div className="flex flex-wrap items-center gap-2">
-          {user._id && (
-            <>
-              <button
-                className="px-4 py-2 bg-green-600 text-white rounded-lg hover:bg-green-700 transition-colors disabled:bg-gray-400 disabled:cursor-not-allowed"
-                onClick={downloadCSV}
-                disabled={downloading}
-              >
-                {downloading ? "Downloading..." : "Download CSV"}
-              </button>
-              <button
-                className="px-4 py-2 bg-primary text-white rounded-lg hover:bg-primary-dark transition-colors"
-                onClick={() => {
-                  setShowForm(true);
-                  setSelectTransaction({});
-                }}
-              >
-                {getTranslate(lang, "addNew")}
-              </button>
-            </>
-          )}
-        </div>
+        {user._id && (
+          <div className="flex flex-wrap items-center gap-2">
+            <button
+              className="px-4 py-2 bg-green-600 text-white rounded-lg hover:bg-green-700 transition-colors disabled:bg-gray-400 disabled:cursor-not-allowed"
+              onClick={downloadCSV}
+              disabled={downloading}
+            >
+              {downloading ? "Downloading..." : "Download CSV"}
+            </button>
+            <button
+              className="px-4 py-2 bg-primary text-white rounded-lg hover:bg-primary-dark transition-colors"
+              onClick={() => {
+                setShowForm(true);
+                setSelectTransaction({});
+              }}
+            >
+              {getTranslate(lang, "addNew")}
+            </button>
+          </div>
+        )}
       </div>
 
       <div className="lg:grid lg:grid-cols-3 gap-4">
-
         <div className="mb-6 bg-white rounded-xl shadow-lg border border-gray-100 p-6 col-span-1">
-
           <ExpenseDatePicker
             expenseResponse={expenseResponse}
             onDateChange={handleDateChange}
@@ -261,8 +257,18 @@ const Expense: NextPage = () => {
 
           <div className="flex items-center justify-between mb-4">
             <h2 className="text-lg font-semibold text-gray-900 flex items-center gap-2">
-              <svg className="w-5 h-5 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M3 4a1 1 0 011-1h16a1 1 0 011 1v2.586a1 1 0 01-.293.707l-6.414 6.414a1 1 0 00-.293.707V17l-4 4v-6.586a1 1 0 00-.293-.707L3.293 7.293A1 1 0 013 6.586V4z" />
+              <svg
+                className="w-5 h-5 text-blue-600"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth="2"
+                  d="M3 4a1 1 0 011-1h16a1 1 0 011 1v2.586a1 1 0 01-.293.707l-6.414 6.414a1 1 0 00-.293.707V17l-4 4v-6.586a1 1 0 00-.293-.707L3.293 7.293A1 1 0 013 6.586V4z"
+                />
               </svg>
               Filter by Categories
             </h2>
@@ -270,12 +276,26 @@ const Expense: NextPage = () => {
               <button
                 onClick={() => {
                   setSelectedCategories([]);
-                  updateQueryParams(expenseResponse.date, expenseResponse.endDate, []);
+                  updateQueryParams(
+                    expenseResponse.date,
+                    expenseResponse.endDate,
+                    []
+                  );
                 }}
                 className="text-sm text-blue-600 hover:text-blue-800 font-medium transition-colors flex items-center gap-1"
               >
-                <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M6 18L18 6M6 6l12 12" />
+                <svg
+                  className="w-4 h-4"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth="2"
+                    d="M6 18L18 6M6 6l12 12"
+                  />
                 </svg>
                 Clear All ({selectedCategories.length})
               </button>
@@ -301,28 +321,27 @@ const Expense: NextPage = () => {
           </div>
         </div>
 
-      <div className="col-span-2">
-        <ExpenseHeader
-          expenseResponse={expenseResponse}
-        />
+        <div className="col-span-2">
+          <ExpenseHeader expenseResponse={expenseResponse} />
 
-        <ViewToggle currentView={currentView} onViewChange={setCurrentView} />
+          <ViewToggle currentView={currentView} onViewChange={setCurrentView} />
 
-        {loading ? (
-          <div className="flex justify-center py-8">
-            <Loading />
-          </div>
-        ) : currentView === 'overview' ? (
-          <ExpenseChart categoryTransactions={expenseResponse.categoryPrice} />
-        ) : (
-          <ExpenseList
-            categoryTransactions={expenseResponse.categoryPrice}
-            openTransactionDetail={openTransactionDetail}
-          />
-        )}
+          {loading ? (
+            <div className="flex justify-center py-8">
+              <Loading />
+            </div>
+          ) : currentView === "overview" ? (
+            <ExpenseChart
+              categoryTransactions={expenseResponse.categoryPrice}
+            />
+          ) : (
+            <ExpenseList
+              categoryTransactions={expenseResponse.categoryPrice}
+              openTransactionDetail={openTransactionDetail}
+            />
+          )}
+        </div>
       </div>
-    </div>
-
     </div>
   );
 };
