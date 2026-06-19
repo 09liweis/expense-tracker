@@ -119,18 +119,6 @@ body {
   @apply text-red-600;
 }
 
-.category-percentage {
-  @apply text-sm text-white text-right p-1 rounded-sm text-shadow-xs;
-}
-
-.category-percentage.income {
-  @apply bg-green-600;
-}
-
-.category-percentage.expense {
-  @apply bg-red-600;
-}
-
 .expense-item {
   @apply flex px-1 justify-between cursor-pointer text-red-400 hover:text-red-600 transition duration-300;
 }
