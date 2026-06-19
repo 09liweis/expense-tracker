@@ -107,18 +107,6 @@ body {
   @apply font-bold transition duration-300 hover:translate-x-1;
 }
 
-.calendar-day {
-  @apply w-[14%] text-center p-4 cursor-pointer;
-}
-
-.calendar-day.active {
-  @apply text-red-800;
-}
-
-.calendar-day.inactive {
-  @apply text-gray-400;
-}
-
 .category-price {
   @apply relative bg-linear-to-l from-red-300 border-dashed border-2 border-red-600 p-1 mb-1 rounded-sm transition duration-300;
 }
