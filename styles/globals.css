@@ -1,4 +1,4 @@
-@import 'tailwindcss';
+@import "tailwindcss";
 
 /*
   The default border color has changed to `currentcolor` in Tailwind CSS v4,
@@ -34,7 +34,8 @@ body {
 }
 
 @keyframes blob {
-  0%, 100% {
+  0%,
+  100% {
     transform: translate(0, 0) scale(1);
   }
   25% {
@@ -82,35 +83,12 @@ body {
   @apply bg-slate-800;
 }
 
-.home-card {
-  @apply p-1 w-full sm:w-1/2 md:w-1/3 lg:w-1/4 xl:w-1/5;
-}
-
-.home-card-wrapper {
-  @apply p-2 drop-shadow-md shadow-lg bg-red-400 rounded-sm;
-}
-
-.home-card-title {
-  @apply text-2xl text-white capitalize;
-}
-
 .bg-card {
   background-color: #ffffffa6;
 }
 
 .month p:hover {
   color: rgb(180, 77, 26);
-}
-
-.nav-link {
-  background: linear-gradient(to right, #f32170, #ff6b08, #cf23cf, #eedd44) no-repeat right bottom;
-  background-size: 0px 2px;
-  transition: background-size 0.5s;
-}
-
-.nav-link:hover {
-  background-position: left bottom;
-  background-size: 100% 2px;
 }
 
 .todo-is-done {
@@ -125,7 +103,7 @@ body {
     transform: scale(1.5);
   }
   100% {
-    transform: scale(1)
+    transform: scale(1);
   }
 }
 
