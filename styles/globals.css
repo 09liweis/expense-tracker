@@ -49,10 +49,6 @@ body {
   background-color: #ffffffa6;
 }
 
-.todo-is-done {
-  animation: todoDone 0.6s ease-in-out;
-}
-
 @keyframes todoDone {
   0% {
     transform: scale(1);
