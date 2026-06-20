@@ -49,18 +49,6 @@ body {
   background-color: #ffffffa6;
 }
 
-@keyframes todoDone {
-  0% {
-    transform: scale(1);
-  }
-  50% {
-    transform: scale(1.5);
-  }
-  100% {
-    transform: scale(1);
-  }
-}
-
 .knowledge-item {
   @apply font-bold transition duration-300 hover:translate-x-1;
 }
