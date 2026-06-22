@@ -5,7 +5,6 @@ interface Todo {
   name: string;
   status: string;
   date: string;
-  is_done: boolean;
 }
 
 interface TodoListProps {
@@ -36,19 +35,19 @@ export default function TodoList({
               <button
                 onClick={() => onToggleTodo(todo, index)}
                 className={`w-6 h-6 rounded-full border-2 flex items-center justify-center transition-colors
-                  ${todo.is_done 
+                  ${todo.status === 'done' 
                     ? 'border-green-500 bg-green-500 text-white' 
                     : 'border-gray-300 hover:border-green-500'
                   }`}
               >
-                {todo.is_done && (
+                {todo.status === 'done' && (
                   <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7" />
                   </svg>
                 )}
               </button>
             )}
-            <span className={`text-gray-800 ${todo.is_done ? 'line-through text-gray-500' : ''}`}>
+            <span className={`text-gray-800 ${todo.status === 'done' ? 'line-through text-gray-500' : ''}`}>
               {todo.name}
             </span>
           </div>

@@ -12,7 +12,6 @@ interface Todo {
   name: string;
   status: string;
   date: string;
-  is_done: boolean;
 }
 
 const TodosPage: NextPage = () => {
@@ -51,7 +50,7 @@ const TodosPage: NextPage = () => {
       method: 'PUT',
       body: { status: 'done' },
     });
-    todo.is_done = true;
+    todo.status = 'done';
     const newTodos = [...todos];
     newTodos[todoIndex] = todo;
     setTodos(newTodos);
