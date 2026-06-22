@@ -54,7 +54,7 @@ export default function TodoList({
           
           <div className="flex items-center space-x-4">
             <span className="text-sm text-gray-500">
-              {new Date(todo.date).toLocaleDateString()}
+              {todo.date}
             </span>
             {isUserLoggedIn && (
               <button
