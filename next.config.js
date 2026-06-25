@@ -48,16 +48,6 @@ const nextConfig = {
     ];
   },
 
-  // Rewrites for clean URLs
-  async rewrites() {
-    return [
-      {
-        source: "/sitemap.xml",
-        destination: "/api/sitemap.xml",
-      },
-    ];
-  },
-
   // Compression
   compress: true,
 
