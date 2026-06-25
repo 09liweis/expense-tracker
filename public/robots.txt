@@ -5,6 +5,3 @@ Allow: /
 # Disallow authentication pages
 Disallow: /auth/
 Disallow: /api/
-
-# Sitemap
-Sitemap: https://samliweisen.dev/sitemap.xml
