@@ -3,14 +3,6 @@ const nextConfig = {
   reactStrictMode: true,
   swcMinify: true,
 
-  // Image optimization
-  images: {
-    domains: [
-      'images.pexels.com',
-    ],
-    formats: ["image/avif", "image/webp"],
-  },
-
   // i18n for multilingual support
   i18n: {
     locales: ["en", "zh"],
