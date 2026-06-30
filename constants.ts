@@ -18,6 +18,4 @@ export const EXPENSE_CATEGORIES_API = `${API_URL}transactions/categories`;
 
 export const TODO_LIST_API = `${API_URL}todos`;
 
-export const CONTACT_LIST_API = `${API_URL}contacts`;
-
 export const USER_AUTH_API = `${API_URL}user/auth`;
