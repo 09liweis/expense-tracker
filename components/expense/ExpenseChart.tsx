@@ -58,7 +58,7 @@ function CategoryRow({ category, amount, percentage, isIncome, colorMap, colorKe
       animate={{ opacity: 1, x: 0 }}
       transition={{ delay: index * 0.05 }}
       className={`p-2 md:p-4 rounded-lg border-2 transition-all cursor-pointer ${
-        isHovered ? 'border-gray-300 bg-gray-50 shadow-md scale-105' : 'border-gray-100 bg-white hover:border-gray-200'
+        isHovered ? 'border-gray-300 bg-gray-50 shadow-md scale-102' : 'border-gray-100 bg-white hover:border-gray-200'
       }`}
       onMouseEnter={() => onHover(category)}
       onMouseLeave={() => onHover(null)}
