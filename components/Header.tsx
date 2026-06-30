@@ -6,7 +6,7 @@ import { HeaderProps, emptyUser } from "../types";
 import Icon from "./Icon";
 
 const NAV_LINKS = [
-  { tl: "Expenses", url: "/expenses", icon: "piggy-bank" },
+  { tl: "Expenses", url: "/", icon: "piggy-bank" },
   { tl: "Todos", url: "/todos", icon: "list" },
   { tl: "Knowledges", url: "/knowledges", icon: "book" },
 ];
