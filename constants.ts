@@ -20,8 +20,6 @@ export const TODO_LIST_API = `${API_URL}todos`;
 
 export const CONTACT_LIST_API = `${API_URL}contacts`;
 
-export const BLOG_LIST_API = `${API_URL}blogs`;
-
 export const STATS_LIST_API = `${API_URL}stats`;
 
 export const USER_AUTH_API = `${API_URL}user/auth`;
