@@ -17,5 +17,3 @@ export const EXPENSE_DELETE_API = (id: string) =>
 export const EXPENSE_CATEGORIES_API = `${API_URL}transactions/categories`;
 
 export const TODO_LIST_API = `${API_URL}todos`;
-
-export const USER_AUTH_API = `${API_URL}user/auth`;
