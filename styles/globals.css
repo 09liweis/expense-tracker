@@ -21,10 +21,6 @@
   @apply bg-slate-800;
 }
 
-.bg-card {
-  background-color: #ffffffa6;
-}
-
 .knowledge-item {
   @apply font-bold transition duration-300 hover:translate-x-1;
 }
