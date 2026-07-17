@@ -62,13 +62,13 @@ export default function LoginForm({ setUser, setShowLogin }: LoginFormProps) {
         <div className="px-8 py-8 space-y-6">
           <div className="space-y-2">
             <label
-              htmlFor="emal"
+              htmlFor="email"
               className="block text-sm font-semibold text-gray-700"
             >
               Email Address
             </label>
             <input
-              id="emal"
+              id="email"
               ref={emailInput}
               className="w-full px-4 py-3 border-2 border-gray-300 rounded-lg text-gray-900 placeholder-gray-500 focus:outline-none focus:border-slate-600 focus:ring-1 focus:ring-slate-600 transition-colors"
               placeholder="you@example.com"
