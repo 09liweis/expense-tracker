@@ -235,18 +235,21 @@ const Expense: NextPage = () => {
             >
               {downloading ? "Downloading..." : "Download CSV"}
             </button>
-            <button
-              className="px-4 py-2 bg-primary text-white rounded-lg hover:bg-primary-dark transition-colors cursor-pointer"
-              onClick={() => {
-                setShowForm(true);
-                setSelectTransaction({});
-              }}
-            >
-              {getTranslate(lang, "addNew")}
-            </button>
           </div>
         )}
       </div>
+
+      {user._id &&
+      <button
+        className="px-4 py-2 z-100 bg-primary text-white rounded-3xl fixed bottom-5 right-5 hover:bg-primary-dark transition-colors cursor-pointer"
+        onClick={() => {
+          setShowForm(true);
+          setSelectTransaction({});
+        }}
+      >
+        {getTranslate(lang, "addNew")}
+      </button>
+      }
 
       <div className="lg:grid lg:grid-cols-3 gap-4">
         <div className="mb-6 bg-white rounded-xl shadow-lg border border-gray-100 p-6 col-span-1">
