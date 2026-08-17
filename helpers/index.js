@@ -70,7 +70,7 @@ export const LANGUAGES = {
     expenses: 'Expenses',
     login: 'Login',
     logout: 'Log Out',
-    addNew: 'Add New',
+    addNew: 'Add',
     subscription: 'Subscription',
     todos: 'Todos',
     comments: 'Comments',
