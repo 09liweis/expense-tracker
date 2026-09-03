@@ -30,7 +30,7 @@ export default function ExpenseDatePicker({ expenseResponse, onDateChange }: Exp
         </svg>
         Select Date Range
       </h3>
-      <div className="grid grid-cols-2 gap-4">
+      <div className="grid grid-cols-2 gap-2">
         <DateField
           label="Start Date"
           type="month"

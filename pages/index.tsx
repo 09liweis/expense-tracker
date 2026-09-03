@@ -311,7 +311,7 @@ const Expense: NextPage = () => {
                 <button
                   key={category.toString()}
                   onClick={() => toggleCategory(category)}
-                  className={`group relative px-2 py-1 cursor-pointer rounded-lg text-sm font-medium border-2 transition-all transform hover:scale-105 capitalize ${
+                  className={`group relative px-2 py-1 cursor-pointer rounded-md text-sm border transition-all transform hover:scale-105 capitalize ${
                     isSelected
                       ? "bg-primary text-white border-slate-900 shadow-lg"
                       : "bg-white text-gray-700 border-gray-200 hover:border-blue-400 hover:bg-blue-50"
