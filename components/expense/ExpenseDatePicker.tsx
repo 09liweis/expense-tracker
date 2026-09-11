@@ -9,13 +9,13 @@ function DateField({ label, type, value, onChange }: {
   label: string; type: string; value: string; onChange: (v: string) => void;
 }) {
   return (
-    <div>
-      <label className="block text-sm font-medium text-gray-700 mb-2">{label}</label>
+    <div className="flex flex-col">
+      <label className="text-sm font-medium p-2">{label}</label>
       <input
         type={type}
         value={value}
         onChange={(e) => onChange(e.target.value)}
-        className="w-full px-4 py-2 rounded-lg bg-white border-2 border-gray-200 text-gray-900 font-medium focus:border-blue-500 focus:ring-2 focus:ring-blue-200 transition-all"
+        className="w-full p-2 rounded bg-white border-2 border-gray-200 font-medium focus:border-blue-500 focus:ring-2 focus:ring-blue-200 transition-all"
       />
     </div>
   );
