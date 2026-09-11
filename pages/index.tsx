@@ -7,6 +7,7 @@ import ExpenseForm from "@/components/expense/ExpenseForm";
 import ExpenseList from "@/components/expense/ExpenseList";
 import ExpenseHeader from "@/components/expense/ExpenseHeader";
 import ExpenseDatePicker from "@/components/expense/ExpenseDatePicker";
+import SectionTitle from "@/components/expense/SectionTitle";
 import ExpenseChart from "@/components/expense/ExpenseChart";
 import ViewToggle from "@/components/expense/ViewToggle";
 import { Transaction, ExpenseResponse } from "types";
@@ -259,7 +260,7 @@ const Expense: NextPage = () => {
           />
 
           <div className="flex items-center justify-between mb-4">
-            <h2 className="text-lg font-semibold text-gray-900 flex items-center gap-2">
+            <SectionTitle>
               <svg
                 className="w-5 h-5 text-blue-600"
                 fill="none"
@@ -274,7 +275,7 @@ const Expense: NextPage = () => {
                 />
               </svg>
               Filter by Categories
-            </h2>
+            </SectionTitle>
             {selectedCategories.length > 0 && (
               <button
                 onClick={() => {
