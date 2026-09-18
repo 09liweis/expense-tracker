@@ -83,7 +83,7 @@ export default function TodoForm({ onSubmit, onClose }: TodoFormProps) {
             type="submit"
             className="cursor-pointer px-4 py-2 bg-primary text-white rounded-lg hover:bg-primary-dark transition-colors"
           >
-            Add Todo
+            Add
           </button>
         </div>
       </motion.form>
