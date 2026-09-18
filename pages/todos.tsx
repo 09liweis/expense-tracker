@@ -73,12 +73,11 @@ const TodosPage: NextPage = () => {
       {isUserLoggedIn && (
         <button
           onClick={() => setShowForm(true)}
-          className="cursor-pointer px-4 py-2 bg-primary fixed bottom-5 right-5 text-white rounded-lg hover:bg-primary-dark transition-all hover:scale-105 flex items-center space-x-2"
+          className="cursor-pointer p-4 bg-primary fixed bottom-5 right-5 text-white rounded-3xl hover:bg-primary-dark transition-all hover:scale-105"
         >
           <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M12 4v16m8-8H4" />
           </svg>
-          <span>Add Todo</span>
         </button>
       )}
 
