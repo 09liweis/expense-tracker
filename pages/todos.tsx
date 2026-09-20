@@ -12,6 +12,11 @@ interface Todo {
   name: string;
   status: string;
   date: string;
+  location?: {
+    address: string;
+    lat: number;
+    lng: number;
+  }
 }
 
 const TodosPage: NextPage = () => {
