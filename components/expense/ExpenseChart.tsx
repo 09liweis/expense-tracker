@@ -39,7 +39,7 @@ function parseAmount(total: string) {
 function StatCard({ color, label, value }: { color: string; label: string; value: string }) {
   const c = STAT_COLOR_MAP[color];
   return (
-    <div className={`bg-gradient-to-br ${c.bgLighter} ${c.bgLight} rounded-lg p-2 md:p-4 ${c.border}`}>
+    <div className={`bg-gradient-to-br ${c.bgLighter} ${c.bgLight} rounded p-2 md:p-4 ${c.border}`}>
       <p className={`text-xs font-medium ${c.textDark} uppercase tracking-wide mb-1`}>{label}</p>
       <p className={`text-xl font-bold text-center ${c.textDark}`}>{value}</p>
     </div>
@@ -57,7 +57,7 @@ function CategoryRow({ category, amount, percentage, isIncome, colorMap, colorKe
       initial={{ opacity: 0, x: -20 }}
       animate={{ opacity: 1, x: 0 }}
       transition={{ delay: index * 0.05 }}
-      className={`p-2 md:p-4 rounded-lg border-2 transition-all cursor-pointer ${
+      className={`p-2 md:p-4 rounded border-2 transition-all cursor-pointer ${
         isHovered ? 'border-gray-300 bg-gray-50 shadow-md scale-102' : 'border-gray-100 bg-white hover:border-gray-200'
       }`}
       onMouseEnter={() => onHover(category)}
@@ -96,7 +96,7 @@ function StackedBar({ items, total, colorMap, colorKeys, hoveredCategory, setHov
     return (
       <div className="mb-8">
         <h3 className="text-sm font-medium text-gray-500 mb-2">{label}</h3>
-        <div className="h-16 rounded-xl bg-gray-50 border border-gray-200 flex items-center justify-center text-gray-400 text-sm">
+        <div className="h-16 rounded bg-gray-50 border border-gray-200 flex items-center justify-center text-gray-400 text-sm">
           No data
         </div>
       </div>
@@ -106,7 +106,7 @@ function StackedBar({ items, total, colorMap, colorKeys, hoveredCategory, setHov
   return (
     <div className="mb-8">
       <h3 className="text-sm font-medium text-gray-500 mb-2">{label}</h3>
-      <div className="flex items-center h-16 rounded-xl overflow-hidden shadow-sm border border-gray-200">
+      <div className="flex items-center h-16 rounded overflow-hidden shadow-sm border border-gray-200">
         {items.map((cat, i) => {
           const pct = total > 0 ? (parseAmount(cat.total) / total) * 100 : 0;
           const color = colorKeys[i % colorKeys.length];
@@ -134,7 +134,7 @@ function StackedBar({ items, total, colorMap, colorKeys, hoveredCategory, setHov
                 </div>
               )}
               {isHovered && (
-                <div className="absolute bottom-full left-1/2 -translate-x-1/2 mb-3 bg-gray-900 text-white text-xs py-3 px-4 rounded-lg shadow-xl whitespace-nowrap z-20 pointer-events-none">
+                <div className="absolute bottom-full left-1/2 -translate-x-1/2 mb-3 bg-gray-900 text-white text-xs py-3 px-4 rounded shadow-xl whitespace-nowrap z-20 pointer-events-none">
                   <div className="font-semibold capitalize mb-1">{cat.category}</div>
                   <div className="text-green-400 font-bold">{cat.total}</div>
                   <div className="text-gray-300">{pct.toFixed(1)}% of {label.toLowerCase()}</div>
@@ -154,7 +154,7 @@ export default function ExpenseChart({ categoryTransactions }: ExpenseChartProps
 
   if (categoryTransactions.length === 0) {
     return (
-      <div className="bg-white rounded-xl shadow-sm border border-gray-200 p-12 text-center">
+      <div className="bg-white rounded shadow-sm border border-gray-200 p-12 text-center">
         <svg className="w-16 h-16 mx-auto mb-4 text-gray-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z" />
         </svg>
@@ -175,7 +175,7 @@ export default function ExpenseChart({ categoryTransactions }: ExpenseChartProps
   const sortedExpense = [...expenseCategories].sort((a, b) => parseAmount(b.total) - parseAmount(a.total));
 
   return (
-    <div className="bg-white rounded-xl shadow-sm border border-gray-200 p-3 md:p-6 mb-6">
+    <div className="bg-white rounded shadow-sm border border-gray-200 p-3 md:p-6 mb-6">
       <div className="flex items-center justify-between mb-6">
         <h2 className="text-2xl font-bold text-gray-900">Financial Overview</h2>
         <div className="text-right">
