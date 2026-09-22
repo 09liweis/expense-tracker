@@ -15,6 +15,11 @@ export default function TodoForm({ onSubmit, onClose }: TodoFormProps) {
     setTodo({ name: '', date: '' });
   };
 
+  const TODO_FIELDS = [
+    {field: 'name', type: 'text', title: 'Task Name'},
+    {field: 'date', type: 'date', title: 'Due Date'}
+  ]
+
   return (
     <motion.div 
       initial={{ opacity: 0 }}
@@ -41,34 +46,22 @@ export default function TodoForm({ onSubmit, onClose }: TodoFormProps) {
         </div>
         
         <div className="space-y-4">
-          <div>
-            <label htmlFor="name" className="block text-sm font-medium text-gray-700 mb-1">
-              Task Name
-            </label>
-            <input
-              id="name"
-              type="text"
-              value={todo.name}
-              onChange={(e) => setTodo({ ...todo, name: e.target.value })}
-              className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500 transition-colors"
-              placeholder="Enter your task"
-              required
-            />
-          </div>
-          
-          <div>
-            <label htmlFor="date" className="block text-sm font-medium text-gray-700 mb-1">
-              Due Date
-            </label>
-            <input
-              id="date"
-              type="date"
-              value={todo.date}
-              onChange={(e) => setTodo({ ...todo, date: e.target.value })}
-              className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500 transition-colors"
-              required
-            />
-          </div>
+          {TODO_FIELDS.map(({field, type, title})=>
+            <div>
+              <label htmlFor={field} className="block text-sm font-medium text-gray-700 mb-1">
+                {title}
+              </label>
+              <input
+                id={field}
+                type={type}
+                value={todo[field]}
+                onChange={(e) => setTodo({ ...todo, [field]: e.target.value })}
+                className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500 transition-colors"
+                placeholder="Enter your task"
+                required
+              />
+            </div>
+          )}
         </div>
 
         <div className="mt-6 flex justify-end space-x-3">
