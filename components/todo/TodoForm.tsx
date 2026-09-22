@@ -6,6 +6,12 @@ interface TodoFormProps {
   onClose: () => void;
 }
 
+type TodoForm = {
+  name: string;
+  date: string;
+  title: string
+}
+
 export default function TodoForm({ onSubmit, onClose }: TodoFormProps) {
   const [todo, setTodo] = useState({ name: '', date: '' });
 
@@ -15,7 +21,7 @@ export default function TodoForm({ onSubmit, onClose }: TodoFormProps) {
     setTodo({ name: '', date: '' });
   };
 
-  const TODO_FIELDS = [
+  const TODO_FIELDS:{ field: keyof TodoForm; type: string }[] = [
     {field: 'name', type: 'text', title: 'Task Name'},
     {field: 'date', type: 'date', title: 'Due Date'}
   ]
