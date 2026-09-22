@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import { motion } from 'motion/react';
+import TodoInput from './TodoInput';
 
 interface TodoFormProps {
   onSubmit: (todo: { name: string; date: string }) => void;
@@ -14,11 +15,6 @@ export default function TodoForm({ onSubmit, onClose }: TodoFormProps) {
     onSubmit(todo);
     setTodo({ name: '', date: '' });
   };
-
-  const TODO_FIELDS:{ field: string; type: string, title: string }[] = [
-    {field: 'name', type: 'text', title: 'Task Name'},
-    {field: 'date', type: 'date', title: 'Due Date'}
-  ]
 
   return (
     <motion.div 
@@ -46,22 +42,20 @@ export default function TodoForm({ onSubmit, onClose }: TodoFormProps) {
         </div>
         
         <div className="space-y-4">
-          {TODO_FIELDS.map(({field, type, title})=>
-            <div key={field}>
-              <label htmlFor={field} className="block text-sm font-medium text-gray-700 mb-1">
-                {title}
-              </label>
-              <input
-                id={field}
-                type={type}
-                value={todo[field]}
-                onChange={(e) => setTodo({ ...todo, [field]: e.target.value })}
-                className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500 transition-colors"
-                placeholder="Enter your task"
-                required
-              />
-            </div>
-          )}
+          <TodoInput
+            title={"Task Name"}
+            field={"name"}
+            value={todo.name}
+            onChange={(e) => setTodo({ ...todo, name: e.target.value })}
+            placeholder={"Enter your task"}
+          />
+          <TodoInput
+            title={"Due Date"}
+            field={"date"}
+            value={todo.date}
+            type={"date"}
+            onChange={(e) => setTodo({ ...todo, date: e.target.value })}
+          />
         </div>
 
         <div className="mt-6 flex justify-end space-x-3">
