@@ -7,7 +7,7 @@ interface TodoFormProps {
 }
 
 export default function TodoForm({ onSubmit, onClose }: TodoFormProps) {
-  const [todo, setTodo] = useState({ name: '', date: '' });
+  const [todo, setTodo] = useState<{name:string, date:string}>({ name: '', date: '' });
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
