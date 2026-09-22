@@ -47,7 +47,7 @@ export default function TodoForm({ onSubmit, onClose }: TodoFormProps) {
         
         <div className="space-y-4">
           {TODO_FIELDS.map(({field, type, title})=>
-            <div>
+            <div key={field}>
               <label htmlFor={field} className="block text-sm font-medium text-gray-700 mb-1">
                 {title}
               </label>
