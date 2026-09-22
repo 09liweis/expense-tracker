@@ -53,7 +53,7 @@ export default function TodoForm({ onSubmit, onClose }: TodoFormProps) {
             title={"Due Date"}
             field={"date"}
             value={todo.date}
-            type={"date"}
+            tp={"date"}
             onChange={(e) => setTodo({ ...todo, date: e.target.value })}
           />
         </div>
