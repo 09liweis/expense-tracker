@@ -12,8 +12,8 @@ interface Todo {
   name: string;
   status: string;
   date: string;
-  location?: {
-    address: string;
+  loc?: {
+    addr: string;
     lat: number;
     lng: number;
   }
