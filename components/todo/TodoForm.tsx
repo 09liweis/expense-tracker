@@ -11,7 +11,7 @@ interface TodoFormProps {
 const googleMap = new GoogleMap();
 
 export default function TodoForm({ onSubmit, onClose }: TodoFormProps) {
-  const [todo, setTodo] = useState<{name:string, date:string}>({ name: '', date: '' });
+  const [todo, setTodo] = useState<{name:string, date:string, loc?:{addr:string,lat:number,lng:number}}>({ name: '', date: '' });
   const placeInput = useRef(null);
 
   const handleSubmit = (e: React.FormEvent) => {
