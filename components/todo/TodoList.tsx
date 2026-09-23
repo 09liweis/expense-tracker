@@ -47,9 +47,14 @@ export default function TodoList({
                 )}
               </button>
             )}
-            <span className={`text-gray-800 ${todo.status === 'done' ? 'line-through text-gray-500' : ''}`}>
-              {todo.name}
-            </span>
+            <div className="flex flex-col gap-2">
+              <span className={`text-gray-800 ${todo.status === 'done' ? 'line-through text-gray-500' : ''}`}>
+                {todo.name}
+              </span>
+              {todo.loc?.addr && 
+                <div className="text-sm text-gray-400">{todo.loc.addr}</div>
+              }
+            </div>
           </div>
           
           <div className="flex items-center space-x-4">
