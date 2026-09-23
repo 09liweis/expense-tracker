@@ -46,7 +46,7 @@ export default function TodoList({
                 {todo.name}
               </span>
               {todo.loc?.addr && 
-                <a target="_blank" href={`https://www.google.com/maps/place/${todo.loc?.addr}`} className="text-sm text-gray-400">{todo.loc.addr}</a>
+                <a target="_blank" href={`https://maps.google.com/?q=${todo.loc?.addr}`} className="text-sm text-gray-400">{todo.loc.addr}</a>
               }
             </div>
           </div>
