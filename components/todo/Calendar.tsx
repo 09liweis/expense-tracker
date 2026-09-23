@@ -42,9 +42,7 @@ export default function Calendar({ items }: CalendarProps) {
 
     // Current month days
     for (let i = 1; i <= lastDate; i++) {
-      const isToday = i === today.getDate() && 
-                     month === today.getMonth() && 
-                     year === today.getFullYear();
+      const isToday = i === today.getDate() && month === today.getMonth() && year === today.getFullYear();
       
       newDays.push({ 
         status: isToday ? 'active' : '', 
