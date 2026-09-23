@@ -6,7 +6,7 @@ import { fetchAPI } from 'helpers';
 import Calendar from '@/components/todo/Calendar';
 import TodoList from '@/components/todo/TodoList';
 import TodoForm from '@/components/todo/TodoForm';
-import {Todo} from '@/types';
+import {Todo} from 'types';
 
 
 const TodosPage: NextPage = () => {
