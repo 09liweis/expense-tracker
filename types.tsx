@@ -81,3 +81,15 @@ export interface Knowledge {
   createdAt?: string;
   updatedAt?: string;
 }
+
+export interface Todo {
+  _id: string;
+  name: string;
+  status: string;
+  date: string;
+  loc?: {
+    addr: string;
+    lat: number;
+    lng: number;
+  }
+}

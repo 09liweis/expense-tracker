@@ -6,18 +6,8 @@ import { fetchAPI } from 'helpers';
 import Calendar from '@/components/todo/Calendar';
 import TodoList from '@/components/todo/TodoList';
 import TodoForm from '@/components/todo/TodoForm';
+import {Todo} from '@/types';
 
-interface Todo {
-  _id: string;
-  name: string;
-  status: string;
-  date: string;
-  loc?: {
-    addr: string;
-    lat: number;
-    lng: number;
-  }
-}
 
 const TodosPage: NextPage = () => {
   const [todos, setTodos] = useState<Todo[]>([]);

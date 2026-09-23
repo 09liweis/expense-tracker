@@ -1,11 +1,5 @@
 import { motion } from 'motion/react';
-
-interface Todo {
-  _id: string;
-  name: string;
-  status: string;
-  date: string;
-}
+import {Todo} from '@/types';
 
 interface TodoListProps {
   todos: Todo[];
