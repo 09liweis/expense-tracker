@@ -84,7 +84,7 @@ export default function TodoForm({ onSubmit, onClose }: TodoFormProps) {
           />
           <section
             id="map"
-            className="mb-2 w-full h-36 border rounded-lg"
+            className="mb-2 w-full h-36 border rounded"
           ></section>
         </div>
 
