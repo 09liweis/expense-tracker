@@ -1,19 +1,39 @@
-import { useState } from 'react';
+import { useState, useEffect, useRef } from 'react';
 import { motion } from 'motion/react';
 import TodoInput from './TodoInput';
+import { loadGoogleMapScript, GoogleMap } from 'helpers/googleMap';
 
 interface TodoFormProps {
   onSubmit: (todo: { name: string; date: string }) => void;
   onClose: () => void;
 }
 
+const googleMap = new GoogleMap();
+
 export default function TodoForm({ onSubmit, onClose }: TodoFormProps) {
   const [todo, setTodo] = useState<{name:string, date:string}>({ name: '', date: '' });
+  const placeInput = useRef(null);
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
     onSubmit(todo);
     setTodo({ name: '', date: '' });
+  };
+
+  useEffect(()=>{
+    loadGoogleMapScript(loadFormMap);
+  },[]);
+
+  const loadFormMap = () => {
+    googleMap.initMap('map', {});
+    googleMap.getPlaceAutocomplete((place) => {
+      googleMap.setCenter(place);
+      setTodo({...todo, loc:{
+        addr: place.address,
+        lat: place.lat,
+        lng: place.lng
+      }});
+    });
   };
 
   return (
@@ -56,6 +76,16 @@ export default function TodoForm({ onSubmit, onClose }: TodoFormProps) {
             tp={"date"}
             onChange={(e) => setTodo({ ...todo, date: e.target.value })}
           />
+          <input
+            id="address"
+            ref={placeInput}
+            className="w-full border p-2 mb-2 rounded-sm"
+            placeholder="Place"
+          />
+          <section
+            id="map"
+            className="mb-2 w-full h-36 border rounded-lg"
+          ></section>
         </div>
 
         <div className="mt-6 flex justify-end space-x-3">
