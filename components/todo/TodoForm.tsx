@@ -46,7 +46,7 @@ export default function TodoForm({ onSubmit, onClose }: TodoFormProps) {
         initial={{ scale: 0.9, opacity: 0 }}
         animate={{ scale: 1, opacity: 1 }}
         onSubmit={handleSubmit}
-        className="bg-white rounded p-6 w-full max-w-md shadow"
+        className="bg-white rounded p-4 w-full max-w-md shadow"
       >
         <div className="flex justify-between items-center mb-6">
           <h2 className="text-2xl font-semibold text-gray-800">New Todo</h2>
@@ -79,7 +79,7 @@ export default function TodoForm({ onSubmit, onClose }: TodoFormProps) {
           <input
             id="address"
             ref={placeInput}
-            className="w-full border p-2 mb-2 rounded-sm"
+            className="w-full border p-2 mb-2 rounded"
             placeholder="Place"
           />
           <section
