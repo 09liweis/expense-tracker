@@ -63,11 +63,11 @@ export default function TodoForm({ onSubmit, onClose }: TodoFormProps) {
         
         <div className="space-y-4">
           <TodoInput
-            title={"Task Name"}
+            title={"Name"}
             field={"name"}
             value={todo.name}
             onChange={(e) => setTodo({ ...todo, name: e.target.value })}
-            placeholder={"Enter your task"}
+            placeholder={"I am going to ...."}
           />
           <TodoInput
             title={"Due Date"}
