@@ -49,7 +49,7 @@ export default function TodoForm({ onSubmit, onClose }: TodoFormProps) {
         className="bg-white rounded p-6 w-full max-w-md shadow"
       >
         <div className="flex justify-between items-center mb-6">
-          <h2 className="text-2xl font-semibold text-gray-800">Add New Todo</h2>
+          <h2 className="text-2xl font-semibold text-gray-800">New Todo</h2>
           <button
             type="button"
             onClick={onClose}
