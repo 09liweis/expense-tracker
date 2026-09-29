@@ -64,7 +64,7 @@ const TodosPage: NextPage = () => {
 
   return (
     <div className="max-w-4xl mx-auto pb-10">
-      <h1 className="text-3xl font-bold text-gray-800 mb-6">My Todos</h1>
+      <h1 className="text-3xl font-bold text-gray-800 mb-6 text-center">My Todos</h1>
       {isUserLoggedIn && (
         <button
           onClick={() => setShowForm(true)}
