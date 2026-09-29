@@ -52,7 +52,7 @@ export default function TodoList({
           </div>
           
           <div className="flex items-center space-x-4">
-            <span className="text-sm text-gray-500">
+            <span className="text-sm text-gray-500 whitespace-nowrap">
               {todo.date}
             </span>
             {isUserLoggedIn && (
