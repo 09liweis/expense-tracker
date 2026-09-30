@@ -83,9 +83,9 @@ export interface Knowledge {
 }
 
 export interface Todo {
-  _id: string;
+  _id?: string;
   name: string;
-  status: string;
+  status?: string;
   date: string;
   loc?: {
     addr: string;
