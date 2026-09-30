@@ -51,7 +51,7 @@ const TodosPage: NextPage = () => {
     setTodos(newTodos);
   };
 
-  const handleTodoSubmit = async (todo: { name: string; date: string }) => {
+  const handleTodoSubmit = async (todo: Todo) => {
     const todoResponse = await fetchAPI({ 
       url: TODO_LIST_API, 
       body: { ...todo, status: 'pending' }
