@@ -8,6 +8,10 @@ interface TodoListProps {
   onDeleteTodo: (id: string, index: number) => void;
 }
 
+function isTodoDone(todo: Todo) {
+  return todo.status === 'done';
+}
+
 export default function TodoList({ 
   todos, 
   isUserLoggedIn, 
