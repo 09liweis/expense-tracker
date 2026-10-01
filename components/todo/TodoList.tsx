@@ -59,9 +59,9 @@ export default function TodoList({
             <span className="text-sm text-gray-500 whitespace-nowrap">
               {todo.date}
             </span>
-            {isUserLoggedIn && todo._id && (
+            {isUserLoggedIn && (
               <button
-                onClick={() => onDeleteTodo(todo._id, index)}
+                onClick={() => todo._id && onDeleteTodo(todo._id, index)}
                 className="text-gray-400 hover:text-red-500 transition-colors cursor-pointer"
               >
                 <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
