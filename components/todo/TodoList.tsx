@@ -59,7 +59,7 @@ export default function TodoList({
             <span className="text-sm text-gray-500 whitespace-nowrap">
               {todo.date}
             </span>
-            {isUserLoggedIn && (
+            {isUserLoggedIn && todo._id && (
               <button
                 onClick={() => onDeleteTodo(todo._id, index)}
                 className="text-gray-400 hover:text-red-500 transition-colors cursor-pointer"
