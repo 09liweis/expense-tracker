@@ -26,7 +26,7 @@ export default function TodoForm({ onSubmit, onClose }: TodoFormProps) {
 
   const loadFormMap = () => {
     googleMap.initMap('map', {});
-    googleMap.getPlaceAutocomplete((place:any) => {
+    googleMap.getPlaceAutocomplete((place:{address:string, lat: number, lng:number}) => {
       googleMap.setCenter(place);
       setTodo({...todo, loc:{
         addr: place.address,
