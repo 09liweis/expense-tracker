@@ -90,7 +90,7 @@ export default function Calendar({ items }: CalendarProps) {
         <div className="flex items-center justify-between">
           <button 
             onClick={() => handleMonthChange(-1)}
-            className="p-2 hover:bg-white/20 rounded-lg transition-colors"
+            className="cursor-pointer p-2 hover:bg-white/20 rounded-lg transition-colors"
           >
             <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M15 19l-7-7 7-7" />
@@ -99,7 +99,7 @@ export default function Calendar({ items }: CalendarProps) {
           <h2 className="text-xl font-semibold">{curDate}</h2>
           <button 
             onClick={() => handleMonthChange(1)}
-            className="p-2 hover:bg-white/20 rounded-lg transition-colors"
+            className="cursor-pointer p-2 hover:bg-white/20 rounded-lg transition-colors"
           >
             <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9 5l7 7-7 7" />
