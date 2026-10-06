@@ -128,7 +128,7 @@ export default function Calendar({ items }: CalendarProps) {
               whileTap={{ scale: 0.95 }}
               className={`
                 aspect-square rounded-lg flex items-center justify-center text-sm
-                transition-colors relative
+                transition-colors relative cursor-pointer
                 ${status === 'inactive' ? 'text-gray-400' : 'text-gray-700'}
                 ${isToday ? 'bg-primary text-white' : 'hover:bg-gray-100'}
               `}
