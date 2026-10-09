@@ -12,6 +12,10 @@ function isTodoDone(todo: Todo) {
   return todo.status === 'done';
 }
 
+function getTodoAdr(todo: Todo) {
+  return todo.loc?.addr;
+}
+
 export default function TodoList({ 
   todos, 
   isUserLoggedIn, 
@@ -49,8 +53,8 @@ export default function TodoList({
               <span className={`text-gray-800 ${isTodoDone(todo)? 'line-through text-gray-500' : ''}`}>
                 {todo.name}
               </span>
-              {todo.loc?.addr && 
-                <a target="_blank" href={`https://maps.google.com/?q=${todo.loc?.addr}`} className="text-sm text-gray-400 font-medium">{todo.loc.addr}</a>
+              {getTodoAdr(todo) && 
+                <a target="_blank" href={`https://maps.google.com/?q=${getTodoAdr(todo)}`} className="text-sm text-gray-400 font-medium">{getTodoAdr(todo)}</a>
               }
             </div>
           </div>
