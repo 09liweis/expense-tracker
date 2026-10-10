@@ -30,7 +30,7 @@ export default function TodoList({
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           exit={{ opacity: 0, y: -20 }}
-          className="bg-white rounded shadow-xs border border-gray-100 p-4 flex items-center justify-between hover:border-blue-500 transition-all"
+          className="bg-white rounded shadow border border-gray-100 p-4 flex items-center justify-between hover:shadow-md transition-all"
         >
           <div className="flex items-center space-x-3">
             {isUserLoggedIn && (
