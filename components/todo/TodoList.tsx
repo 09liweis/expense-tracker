@@ -36,7 +36,7 @@ export default function TodoList({
             {isUserLoggedIn && (
               <button
                 onClick={() => onToggleTodo(todo, index)}
-                className={`w-6 h-6 rounded-full border-2 flex items-center justify-center transition-colors
+                className={`w-6 h-6 cursor-pointer rounded-full border-2 transition-colors
                   ${isTodoDone(todo)
                     ? 'border-green-500 bg-green-500 text-white' 
                     : 'border-gray-300 hover:border-green-500'
