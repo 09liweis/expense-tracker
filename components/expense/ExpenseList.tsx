@@ -8,8 +8,8 @@ interface CategoryPriceProps {
 
 const CategoryPrice = ({ categoryPrice }: CategoryPriceProps) => {
   const { category, income, total, percentage } = categoryPrice;
-  const colorClass = income ? 'bg-green-600' : 'bg-red-600';
-  const priceColor = income ? 'text-green-600' : 'text-red-600';
+  const colorClass = income ? 'bg-green-700' : 'bg-red-700';
+  const priceColor = income ? 'text-green-700' : 'text-red-700';
 
   return (
     <div className={`${priceColor} bg-white rounded p-3 shadow mb-1`}>
