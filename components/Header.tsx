@@ -252,7 +252,7 @@ export default function Header({
               <div className="mt-auto pt-6 border-t border-gray-200">
                 <div className="flex items-center justify-between text-sm text-gray-400">
                   <span>Sam Li Portfolio</span>
-                  <span>2026</span>
+                  <span>{new Date().getFullYear()}</span>
                 </div>
               </div>
             </div>
