@@ -102,7 +102,7 @@ export default function LoginForm({ setUser, setShowLogin }: LoginFormProps) {
           <button
             type="submit"
             disabled={loginLoading}
-            className="w-full py-3 px-4 bg-primary text-white rounded-lg font-semibold hover:bg-primary-dark focus:outline-none focus:ring-2 focus:ring-slate-600 focus:ring-offset-2 transition-all disabled:opacity-50 disabled:cursor-not-allowed flex items-center justify-center"
+            className="w-full cursor-pointer py-3 px-4 bg-primary text-white rounded-lg font-semibold hover:bg-primary-dark focus:outline-none focus:ring-2 focus:ring-slate-600 focus:ring-offset-2 transition-all disabled:opacity-50 disabled:cursor-not-allowed flex items-center justify-center"
           >
             {loginLoading ? <Loading /> : "Sign In"}
           </button>
@@ -131,7 +131,7 @@ export default function LoginForm({ setUser, setShowLogin }: LoginFormProps) {
         <button
           type="button"
           onClick={() => setShowLogin(false)}
-          className="absolute top-4 right-4 w-8 h-8 flex items-center justify-center rounded-full bg-white/10 hover:bg-white/20 text-white transition-colors"
+          className="absolute cursor-pointer top-4 right-4 w-8 h-8 flex items-center justify-center rounded-full bg-white/10 hover:bg-white/20 text-white transition-colors"
           aria-label="Close"
         >
           <svg
