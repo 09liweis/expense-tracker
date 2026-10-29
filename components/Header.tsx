@@ -211,29 +211,19 @@ export default function Header({
             className="md:hidden fixed inset-0 z-50 bg-white"
           >
             {/* Close button */}
-            <div className="absolute top-0 right-0 p-4 z-10">
-              <button
-                type="button"
-                onClick={() => setMenuOpen(false)}
-                className="p-2 rounded-lg bg-gray-100 text-gray-600 hover:bg-gray-200 transition-colors"
-                aria-label="Close menu"
-              >
-                <Icon name="xmark" classNames="text-2xl" />
-              </button>
-            </div>
+            <button
+              type="button"
+              onClick={() => setMenuOpen(false)}
+              className="absolute top-0 right-0 p-4 z-10 p-2 rounded-lg bg-gray-100 text-gray-600 hover:bg-gray-200 transition-colors"
+              aria-label="Close menu"
+            >
+              <Icon name="xmark" classNames="text-2xl" />
+            </button>
 
             {/* Menu content */}
             <div className="h-full flex flex-col pt-16 px-6 pb-6 overflow-y-auto">
-              {/* Header */}
-              <div className="mb-8">
-                <h2 className="text-2xl font-bold text-gray-900">Navigation</h2>
-                <p className="text-sm text-gray-500 mt-1">
-                  Select a page to visit
-                </p>
-              </div>
-
               {/* Navigation items */}
-              <div className="flex-1 space-y-2">
+              <div className="space-y-2">
                 {NAV_LINKS.map((nav, index) => (
                   <MobileMenuItem
                     key={nav.url}
