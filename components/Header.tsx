@@ -180,16 +180,14 @@ export default function Header({
           />
 
           {/* Hamburger menu button (only visible on mobile and when menu is closed) */}
-          {!menuOpen && (
-            <button
-              type="button"
-              className="md:hidden inline-flex items-center justify-center p-2 rounded-lg bg-white/90 border border-gray-200 shadow-sm text-gray-700 hover:bg-blue-50 transition-all"
-              onClick={() => setMenuOpen(true)}
-              aria-label="Open menu"
-            >
-              <Icon name="bars" classNames="text-xl" />
-            </button>
-          )}
+          <button
+            type="button"
+            className="md:hidden inline-flex items-center justify-center p-2 rounded-lg bg-white/90 border border-gray-200 shadow-sm text-gray-700 hover:bg-blue-50 transition-all"
+            onClick={() => setMenuOpen(true)}
+            aria-label="Open menu"
+          >
+            <Icon name="bars" classNames="text-xl" />
+          </button>
         </div>
 
         <nav className="relative">
