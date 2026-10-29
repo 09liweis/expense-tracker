@@ -11,27 +11,3 @@
 
 如何终止项目
 在终端按 ctrl+C
-
-## TODO
-
-- [x] upgrade to nextjs 13
-- [x] upgrade to nextjs 14
-- [x] todo page, style todo form
-- [x] update, delete todo with animation
-- [x] delete transaction
-- [ ] add statistic card on home page
-- [x] user github sign up
-- [x] user resume page
-- [x] contact page list
-- [x] contact form
-- [ ] project dashboard page
-- [ ] experience dashboard page
-- [ ] resume public url
-- [ ] background image change randomly
-
-
-# Build the image
-docker build -t nextjs-app .
-
-# Run the container
-docker run -p 3000:3000 nextjs-app
