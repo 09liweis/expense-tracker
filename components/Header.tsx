@@ -221,9 +221,8 @@ export default function Header({
             </button>
 
             {/* Menu content */}
-            <div className="h-full flex flex-col pt-16 px-6 pb-6 overflow-y-auto">
+            <div className="h-full flex flex-col gap-2 pt-16 px-6 pb-6 overflow-y-auto">
               {/* Navigation items */}
-              <div className="space-y-2">
                 {NAV_LINKS.map((nav, index) => (
                   <MobileMenuItem
                     key={nav.url}
@@ -234,15 +233,6 @@ export default function Header({
                     index={index}
                   />
                 ))}
-              </div>
-
-              {/* Footer */}
-              <div className="mt-auto pt-6 border-t border-gray-200">
-                <div className="flex items-center justify-between text-sm text-gray-400">
-                  <span>Sam Li Portfolio</span>
-                  <span>{new Date().getFullYear()}</span>
-                </div>
-              </div>
             </div>
           </motion.div>
         </nav>
