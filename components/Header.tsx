@@ -122,21 +122,15 @@ function MobileMenuItem({
   const isActive = nav.url === pathname;
 
   return (
-    <motion.div
-      initial={{ x: -300, opacity: 0 }}
-      animate={{ x: 0, opacity: 1 }}
-      transition={{ delay: index * 0.08, duration: 0.3, ease: "easeOut" }}
-    >
-      <Link onClick={onClick} key={nav.url} href={nav.url} 
-        className={`w-full cursor-pointer flex items-center gap-4 px-6 py-4 rounded-xl text-lg font-medium transition-colors text-left ${
-          isActive
-            ? "bg-gray-900 text-white shadow-md"
-            : "text-gray-700 hover:bg-gray-100 hover:text-gray-900"
-        }`}>
-          <Icon name={nav.icon} classNames="text-2xl" />
-          <span>{getTranslate(lang, nav.tl)}</span>
-      </Link>
-    </motion.div>
+    <Link onClick={onClick} key={nav.url} href={nav.url} 
+      className={`w-full cursor-pointer flex items-center gap-4 px-6 py-4 rounded-xl text-lg font-medium transition-colors text-left ${
+        isActive
+          ? "bg-gray-900 text-white shadow-md"
+          : "text-gray-700 hover:bg-gray-100 hover:text-gray-900"
+      }`}>
+        <Icon name={nav.icon} classNames="text-2xl" />
+        <span>{getTranslate(lang, nav.tl)}</span>
+    </Link>
   );
 }
 
