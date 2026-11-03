@@ -13,12 +13,10 @@ const NAV_LINKS = [
 
 function UserSection({
   user,
-  lang,
   onLogout,
   onLogin,
 }: {
   user: any;
-  lang: String;
   onLogout: () => void;
   onLogin: () => void;
 }) {
@@ -38,7 +36,7 @@ function UserSection({
           className="px-4 py-2 bg-red-500 text-white rounded-lg hover:bg-red-600 transition-colors shadow-xs font-medium cursor-pointer"
           onClick={onLogout}
         >
-          {getTranslate(lang, "logout")}
+          logout
         </motion.button>
       </motion.div>
     );
@@ -51,7 +49,7 @@ function UserSection({
       className="px-6 py-2 cursor-pointer bg-primary text-white rounded-lg hover:bg-primary-dark transition-all font-medium"
       onClick={onLogin}
     >
-      {getTranslate(lang, "login")}
+      login
     </motion.button>
   );
 }
@@ -164,7 +162,6 @@ export default function Header({
         <div className="flex items-center justify-end gap-4 mb-6">
           <UserSection
             user={user}
-            lang={lang}
             onLogout={handleLogout}
             onLogin={handleLoginClick}
           />
