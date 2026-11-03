@@ -59,13 +59,11 @@ function UserSection({
 function NavItem({
   nav,
   pathname,
-  lang,
   onClick,
   index,
 }: {
   nav: (typeof NAV_LINKS)[0];
   pathname: String;
-  lang: String;
   onClick?: () => void;
   index: number;
 }) {
@@ -90,7 +88,7 @@ function NavItem({
         <div className="flex items-center gap-2">
           <Icon name={nav.icon} classNames="text-lg" />
           <span className="font-medium text-sm md:text-base">
-            {getTranslate(lang, nav.tl)}
+            {nav.tl}
           </span>
         </div>
         {isActive && (
@@ -191,7 +189,6 @@ export default function Header({
                 key={nav.url}
                 nav={nav}
                 pathname={pathname}
-                lang={lang}
                 index={index}
               />
             ))}
