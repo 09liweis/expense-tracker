@@ -107,13 +107,11 @@ function NavItem({
 function MobileMenuItem({
   nav,
   pathname,
-  lang,
   onClick,
   index,
 }: {
   nav: (typeof NAV_LINKS)[0];
   pathname: String;
-  lang: String;
   onClick: () => void;
   index: number;
 }) {
@@ -127,7 +125,7 @@ function MobileMenuItem({
           : "text-gray-700 hover:bg-gray-100 hover:text-gray-900"
       }`}>
         <Icon name={nav.icon} classNames="text-2xl" />
-        <span>{getTranslate(lang, nav.tl)}</span>
+        <span>{nav.tl}</span>
     </Link>
   );
 }
@@ -219,7 +217,6 @@ export default function Header({
                     key={nav.url}
                     nav={nav}
                     pathname={pathname}
-                    lang={lang}
                     onClick={() => setMenuOpen(false)}
                     index={index}
                   />
