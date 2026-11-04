@@ -31,7 +31,6 @@ export interface HeaderProps {
   setUser: Function;
   setShowLogin: Function;
   router: { pathname: String };
-  lang: String;
 }
 
 export interface Transaction {

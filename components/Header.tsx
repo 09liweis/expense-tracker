@@ -133,7 +133,6 @@ export default function Header({
   user,
   setUser,
   router,
-  lang,
 }: HeaderProps) {
   const pathname = router.pathname;
   const [menuOpen, setMenuOpen] = useState(false);

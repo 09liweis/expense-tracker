@@ -82,7 +82,6 @@ function MyApp({ Component, pageProps }: AppProps) {
         <main className="p-2">
           <Header
             setShowLogin={setShowLogin}
-            lang={lang}
             user={user}
             setUser={setUser}
             router={router}
