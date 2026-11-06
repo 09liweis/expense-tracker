@@ -1,7 +1,6 @@
 import Link from "next/link";
 import { useState } from "react";
 import { motion } from "motion/react";
-import { getTranslate } from "../helpers";
 import { HeaderProps, emptyUser } from "../types";
 import Icon from "./Icon";
 

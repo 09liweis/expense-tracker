@@ -1,7 +1,7 @@
 import type { NextPage } from "next";
 import React, { useEffect, useState, useCallback, useContext } from "react";
 import { useRouter } from "next/router";
-import { fetchAPI, getTranslate } from "helpers";
+import { fetchAPI } from "helpers";
 import AppContext from "AppContext";
 import ExpenseForm from "@/components/expense/ExpenseForm";
 import ExpenseList from "@/components/expense/ExpenseList";
@@ -248,7 +248,7 @@ const Expense: NextPage = () => {
           setSelectTransaction({});
         }}
       >
-        {getTranslate(lang, "addNew")}
+        Add
       </button>
       }
 
