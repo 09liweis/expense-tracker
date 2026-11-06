@@ -7,7 +7,7 @@ import AppContext from "../AppContext";
 import Header from "../components/Header";
 import { emptyUser } from "../types";
 import { useState, useEffect } from "react";
-import { checkUserToken, getLanguages } from "../helpers";
+import { checkUserToken } from "../helpers";
 import LoginForm from "../components/LoginForm";
 import LoadingSkeleton from "@/components/LoadingSkeleton";
 
@@ -18,7 +18,6 @@ const getPageTitle = (pageProps: any) => {
 
 function MyApp({ Component, pageProps }: AppProps) {
   const [user, setUser] = useState(emptyUser);
-  const [lang, setLang] = useState(getLanguages("en"));
   const [showLogin, setShowLogin] = useState(false);
   const [loading, setLoading] = useState(false);
 
@@ -55,10 +54,6 @@ function MyApp({ Component, pageProps }: AppProps) {
     };
   }, []);
 
-  useEffect(() => {
-    setLang(getLanguages(router.locale));
-  }, [router.locale]);
-
   return (
     <>
       <Head>
@@ -75,7 +70,6 @@ function MyApp({ Component, pageProps }: AppProps) {
         value={{
           isUserLoggedIn: user?._id,
           user,
-          lang,
           setUser,
         }}
       >

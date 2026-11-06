@@ -108,7 +108,3 @@ export function getLanguageKeys() {
     { k: 'zh', v: '中文' },
   ];
 }
-
-export function getLanguages(lang) {
-  return LANGUAGES[lang];
-}
