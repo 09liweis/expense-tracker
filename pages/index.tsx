@@ -307,6 +307,7 @@ const Expense: NextPage = () => {
           </div>
           <div className="flex flex-wrap gap-2">
             {categories.map((category) => {
+              if (category.length == 0) return null;
               const isSelected = selectedCategories.includes(category);
               return (
                 <button
