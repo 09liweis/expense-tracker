@@ -315,7 +315,7 @@ const Expense: NextPage = () => {
                   onClick={() => toggleCategory(category)}
                   className={`group relative px-2 py-1 cursor-pointer rounded-md text-sm border transition-all transform hover:scale-105 capitalize ${
                     isSelected
-                      ? "bg-primary text-white border-slate-900 shadow-lg"
+                      ? "bg-primary text-white border-slate-900"
                       : "bg-white text-gray-700 border-gray-200 hover:border-blue-400 hover:bg-blue-50"
                   }`}
                 >
