@@ -306,20 +306,20 @@ const Expense: NextPage = () => {
             )}
           </div>
           <div className="flex flex-wrap gap-2">
-            {categories.map((category) => {
-              if (category.length == 0) return null;
-              const isSelected = selectedCategories.includes(category);
+            {categories.map((c) => {
+              if (c.length == 0) return null;
+              const isSelected = selectedCategories.includes(c);
               return (
                 <button
-                  key={category.toString()}
-                  onClick={() => toggleCategory(category)}
+                  key={c.toString()}
+                  onClick={() => toggleCategory(c)}
                   className={`group relative px-2 py-1 cursor-pointer rounded-md text-sm border transition-all transform hover:scale-105 capitalize ${
                     isSelected
                       ? "bg-primary text-white border-slate-900"
                       : "bg-white text-gray-700 border-gray-200 hover:border-blue-400 hover:bg-blue-50"
                   }`}
                 >
-                  {category}
+                  {c}
                 </button>
               );
             })}
