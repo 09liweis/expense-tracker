@@ -12,7 +12,7 @@ export default function ViewToggle({ currentView, onViewChange }: ViewToggleProp
       <button
         key={view}
         onClick={() => onViewChange(view)}
-        className={`relative px-4 py-2 rounded-md text-sm cursor-pointer transition-all ${
+        className={`relative px-4 py-2 rounded text-sm cursor-pointer transition-all ${
           currentView === view
             ? 'text-white'
             : 'text-gray-600 hover:text-gray-900'
