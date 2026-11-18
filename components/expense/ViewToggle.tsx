@@ -15,7 +15,7 @@ export default function ViewToggle({ currentView, onViewChange }: ViewToggleProp
         className={`relative px-4 py-2 rounded text-sm cursor-pointer transition-all ${
           currentView === view
             ? 'text-white'
-            : 'text-gray-600 hover:text-gray-900'
+            : 'text-gray-700 hover:text-gray-900'
         }`}
       >
         {currentView === view && (
