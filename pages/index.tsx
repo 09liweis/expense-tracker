@@ -241,7 +241,7 @@ const Expense: NextPage = () => {
 
       {user._id &&
       <button
-        className="px-4 py-2 z-100 bg-primary text-white rounded-3xl fixed bottom-5 right-5 hover:bg-primary-dark transition-colors cursor-pointer"
+        className="p-3 z-100 bg-primary text-white rounded-4xl fixed bottom-5 right-5 hover:bg-primary-dark transition-colors cursor-pointer"
         onClick={() => {
           setShowForm(true);
           setSelectTransaction({});
