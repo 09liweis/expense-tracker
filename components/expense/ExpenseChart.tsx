@@ -262,7 +262,7 @@ export default function ExpenseChart({ categoryTransactions }: ExpenseChartProps
       <div className="mt-6 grid grid-cols-2 md:grid-cols-4 gap-4">
         <StatCard color="green" label="Income" value={`$${totalIncome.toFixed(2)}`} />
         <StatCard color="red" label="Expenses" value={`$${totalExpense.toFixed(2)}`} />
-        <StatCard color="blue" label="Balance" value={`${balance >= 0 ? '+' : ''}$${balance.toFixed(2)}`} />
+        <StatCard color="blue" label="Balance" value={`${balance >= 0 ? '' : '-'}$${Math.abs(balance).toFixed(2)}`} />
         <StatCard color="amber" label="Categories" value={String(categoryTransactions.length)} />
       </div>
     </div>
