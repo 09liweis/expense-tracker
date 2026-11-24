@@ -285,21 +285,8 @@ const Expense: NextPage = () => {
                     []
                   );
                 }}
-                className="text-sm text-blue-600 hover:text-blue-800 font-medium transition-colors flex items-center gap-1"
+                className="text-sm cursor-pointer text-red-600 hover:text-red-800 font-medium transition-colors"
               >
-                <svg
-                  className="w-4 h-4"
-                  fill="none"
-                  stroke="currentColor"
-                  viewBox="0 0 24 24"
-                >
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    strokeWidth="2"
-                    d="M6 18L18 6M6 6l12 12"
-                  />
-                </svg>
                 Clear All ({selectedCategories.length})
               </button>
             )}
