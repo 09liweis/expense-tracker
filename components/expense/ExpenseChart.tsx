@@ -134,7 +134,7 @@ function StackedBar({ items, total, colorMap, colorKeys, hoveredCategory, setHov
                 </div>
               )}
               {isHovered && (
-                <div className="absolute bottom-full left-1/2 -translate-x-1/2 mb-3 bg-gray-900 text-white text-xs py-3 px-4 rounded shadow-xl whitespace-nowrap z-20 pointer-events-none">
+                <div className="absolute bottom-full left-1/2 -translate-x-1/2 mb-3 bg-gray-900 text-white text-xs py-3 px-4 rounded shadow whitespace-nowrap z-20 pointer-events-none">
                   <div className="font-semibold capitalize mb-1">{cat.category}</div>
                   <div className="text-green-400 font-bold">{cat.total}</div>
                   <div className="text-gray-300">{pct.toFixed(1)}% of {label.toLowerCase()}</div>
