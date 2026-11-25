@@ -252,7 +252,7 @@ const Expense: NextPage = () => {
       }
 
       <div className="lg:grid lg:grid-cols-3 gap-4">
-        <div className="mb-6 bg-white rounded-xl shadow-lg border border-gray-100 p-6 col-span-1">
+        <div className="mb-6 bg-white rounded shadow border border-gray-100 p-3 col-span-1">
           <ExpenseDatePicker
             expenseResponse={expenseResponse}
             onDateChange={handleDateChange}
