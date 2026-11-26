@@ -285,7 +285,7 @@ const Expense: NextPage = () => {
                     []
                   );
                 }}
-                className="text-sm cursor-pointer text-red-600 hover:text-red-800 font-medium transition-colors"
+                className="text-sm cursor-pointer text-red-600 hover:text-red-800 transition-colors"
               >
                 Clear All ({selectedCategories.length})
               </button>
@@ -299,10 +299,10 @@ const Expense: NextPage = () => {
                 <button
                   key={c.toString()}
                   onClick={() => toggleCategory(c)}
-                  className={`group relative px-2 py-1 cursor-pointer rounded-md text-sm border transition-all transform hover:scale-105 capitalize ${
+                  className={`group relative px-2 py-1 cursor-pointer rounded text-sm border transition-all transform hover:scale-105 capitalize ${
                     isSelected
                       ? "bg-primary text-white border-slate-900"
-                      : "bg-white text-gray-700 border-gray-200 hover:border-blue-400 hover:bg-blue-50"
+                      : "bg-white text-gray-700 border-gray-200 hover:border-gray-400 hover:bg-gray-50"
                   }`}
                 >
                   {c}
